@@ -60,9 +60,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: TodoLine-Electron-win-x64
-          path: |
-            dist/*.zip
-            dist/release-*/**
+          # Only the portable zip; the unpacked dist/release-*/ tree is 10x bigger
+          # and is reproduced by every run.
+          path: dist/*.zip
           retention-days: 14
           if-no-files-found: error
 
