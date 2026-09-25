@@ -34,8 +34,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
+
+      # The store lives inside the checkout (.npmrc store-dir), so setup-node's
+      # pnpm cache cannot see it; cache it explicitly.
+      - uses: actions/cache@v4
+        with:
+          path: .cache/pnpm-store
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: pnpm-store-${{ runner.os }}-
 
       - run: pnpm install --frozen-lockfile
 

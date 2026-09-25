@@ -1,5 +1,8 @@
 # TodoLine Electron
 
+[![CI](https://github.com/randerous/todoline-electron/actions/workflows/ci.yml/badge.svg)](https://github.com/randerous/todoline-electron/actions/workflows/ci.yml)
+[![macOS portability](https://github.com/randerous/todoline-electron/actions/workflows/macos.yml/badge.svg)](https://github.com/randerous/todoline-electron/actions/workflows/macos.yml)
+
 独立的 Windows 待办编辑器。Electron + TypeScript + React + Tiptap/ProseMirror，保持 TodoLine Qt 版 `.tde` SQLite 文件格式。默认深色，支持浅色、绿色画布及跟随系统主题。
 
 源码位于 `E:\todoline\TodoLine-Electron`，与 `E:\todoline\Todoline` 并列。独立 Git `main`。原项目源码和发布程序均保留。
