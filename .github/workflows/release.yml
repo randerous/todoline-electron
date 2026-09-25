@@ -34,9 +34,13 @@ jobs:
           key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: pnpm-store-${{ runner.os }}-
 
-      - uses: egor-tensin/setup-mingw@v2
+      # gcc/g++ compile the Windows clipboard and image-decode helpers.
+      - uses: msys2/setup-msys2@v2
         with:
-          platform: x64
+          msystem: MINGW64
+          update: false
+          install: mingw-w64-x86_64-gcc
+          path-type: inherit
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
