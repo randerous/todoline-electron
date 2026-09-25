@@ -1,0 +1,16 @@
+node_modules/
+out/
+dist/
+.cache/
+test-results/
+playwright-report/
+*.tde
+*.tde-*
+*.backup-*
+*.log
+.env*
+
+# macOS / exFAT housekeeping and local build caches
+._*
+.DS_Store
+*.tsbuildinfo

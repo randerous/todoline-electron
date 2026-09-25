@@ -1,0 +1,25 @@
+{
+  "version": "0.2.6",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "packagedE2E": {
+    "passed": 3,
+    "failed": 0,
+    "file": "rename.spec.ts",
+    "cases": ["double-click, IME and Escape", "validation, retry, confirmation and blur", "case-only rename and undo"],
+    "executable": "dist/release-0.2.6/win-unpacked/TodoLine Electron.exe"
+  },
+  "packagedWidthChecks": {
+    "passed": 3,
+    "cases": [
+      {"name": "20260922_0", "before": 136.203125, "editing": 136.203125},
+      {"name": "短.md", "before": 105.015625, "editing": 105.015625},
+      {"name": "long Chinese .cfg name", "before": 240, "editing": 240}
+    ],
+    "widthStableDuringTypingAndCancel": true,
+    "dateNameFitsInput": true,
+    "extraFocusOutlineAbsent": true,
+    "screenshotReviewed": true
+  },
+  "scope": "Rename changes and direct regressions only; no full-suite rerun"
+}

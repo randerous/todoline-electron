@@ -1,0 +1,35 @@
+{
+  "version": "0.2.1",
+  "executable": "dist/release-0.2.1/win-unpacked/TodoLine Electron.exe",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": {
+    "passed": 54,
+    "failed": 0,
+    "files": 6
+  },
+  "targetedSourceE2E": {
+    "uniqueChecksPassed": 9,
+    "unresolvedFailures": 0
+  },
+  "packagedExecutableValidation": {
+    "passed": 8,
+    "failed": 0,
+    "checks": [
+      "Daily date names, occupied filename avoidance, close/exit cleanup and recent/session pruning",
+      "Renamed empty file retained; content kept through restart and removed after clearing",
+      "Converted Markdown cleanup and original blank TDE removal",
+      "Small landscape image proportional fit and window resize",
+      "Portrait image proportional fit and window resize",
+      "Large wide image proportional fit and window resize",
+      "Close image using X, repeat and replace query, reopen existing search",
+      "Close image with Escape, repeat and replace query, reopen existing search"
+    ]
+  },
+  "additionalRegression": "Existing search options and cross-file next-result navigation passed on the final source build. Search is invoked through the menu callback bound to Ctrl+F; this run does not inject native OS keystrokes.",
+  "verificationScope": "Only changed functionality and related regressions; no full test suite.",
+  "compiledFilesChecked": 103,
+  "asarMatchesBuild": true,
+  "zipCRC": "passed",
+  "zipExecutableAndAsarMatch": true
+}

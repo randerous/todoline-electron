@@ -1,0 +1,10 @@
+{
+  "version": "0.1.11",
+  "file": "TodoLine-Electron-0.1.11-win-x64.zip",
+  "bytes": 143348781,
+  "sha256": "3c7380001390f819f3ba28df24a87a6d497666809559d84a728f2a4b23a044ad",
+  "zipEntries": 143,
+  "zipCRC": "passed",
+  "compiledFilesChecked": 15,
+  "asarMatchesBuild": true
+}

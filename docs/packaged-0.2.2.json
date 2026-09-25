@@ -1,0 +1,46 @@
+{
+  "version": "0.2.2",
+  "executable": "dist/release-0.2.2/win-unpacked/TodoLine Electron.exe",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": {
+    "passed": 48,
+    "failed": 0,
+    "files": 6
+  },
+  "packagedExecutableValidation": {
+    "uniqueChecksPassed": 24,
+    "unresolvedFailures": 0,
+    "finalExecutable": {
+      "passed": 19,
+      "files": {
+        "startup": 7,
+        "gutter": 7,
+        "markdown": 5
+      }
+    },
+    "identicalRendererBeforeFinalMainWarmup": {
+      "eventNavigationPassed": 5
+    },
+    "checks": [
+      "Active-only editor restoration, saved cursor/scroll/undo and missing-file isolation",
+      "Search and reminder save/undo in an unvisited tab",
+      "Global recent order preserved on restore",
+      "No SQLite on empty/Markdown startup; first TDE creation and save starts it",
+      "Gutter geometry, lists, selection, drag, culling, deletion and undo",
+      "Markdown formula/code/image rendering, original-byte preservation, conversion/undo and lazy scroll/search",
+      "Visible-event/navigation highlighting, complete search list, ID remapping, virtual rows and three themes"
+    ]
+  },
+  "startupBenchmark": {
+    "runsPerBuildPerScenario": 5,
+    "totalLaunches": 50,
+    "report": "startup-performance-0.2.2.json",
+    "method": "Visible isolated packaged EXEs, OS file cache retained, Playwright launch-to-editable time. Not strict cold start."
+  },
+  "verificationScope": "Changed functionality and related regressions; no full suite.",
+  "compiledFilesChecked": 103,
+  "asarMatchesBuild": true,
+  "zipCRC": "passed",
+  "zipExecutableAndAsarMatch": true
+}

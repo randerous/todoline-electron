@@ -1,0 +1,85 @@
+{
+  "name": "todoline-electron",
+  "version": "0.2.11",
+  "private": true,
+  "description": "TodoLine · 本地优先的连续待办编辑器",
+  "author": "TodoLine",
+  "main": "out/main/index.cjs",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:mac": "node scripts/dev-mac.mjs",
+    "build:mac": "node scripts/build-mac.mjs",
+    "smoke:mac": "node scripts/smoke-mac.mjs",
+    "prepare:mac": "node scripts/prepare-mac.mjs",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "start": "electron .",
+    "package": "node scripts/package.mjs",
+    "prepare": "node scripts/prepare-native.mjs"
+  },
+  "dependencies": {
+    "@tiptap/core": "3.31.3",
+    "@tiptap/extension-code-block": "3.31.3",
+    "@tiptap/pm": "3.31.3",
+    "@tiptap/starter-kit": "3.31.3",
+    "better-sqlite3": "12.11.1",
+    "highlight.js": "~11.11.2",
+    "katex": "^0.18.7",
+    "lowlight": "^3.3.0",
+    "lucide-react": "0.468.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unified": "^11.0.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "electron": "40.10.6",
+    "electron-builder": "26.15.3",
+    "esbuild": "0.27.7",
+    "jsdom": "26.1.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "3.2.7"
+  },
+  "build": {
+    "npmRebuild": false,
+    "appId": "local.todoline.electron",
+    "productName": "TodoLine Electron",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*",
+      "package.json",
+      "resources/icon.png"
+    ],
+    "asarUnpack": [
+      "**/*.node",
+      "**/clipboard-win.exe",
+      "**/image-codec.exe"
+    ],
+    "win": {
+      "target": [
+        "zip"
+      ],
+      "icon": "resources/icon.ico",
+      "signExecutable": false
+    },
+    "artifactName": "TodoLine-Electron-${version}-win-${arch}.${ext}",
+    "electronDist": ".cache/runtime/electron-v40.10.6-win32-x64.zip"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

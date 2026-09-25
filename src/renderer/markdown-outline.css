@@ -1,0 +1,12 @@
+.sidebar.markdown-sidebar{padding-top:0}
+.markdown-outline{flex:1;overflow:auto;min-height:0;padding:8px 0;font-size:13px}
+.markdown-outline-title{display:flex;align-items:center;gap:8px;padding:4px 14px 10px;font-weight:600}
+.markdown-outline-title span{font-weight:400;opacity:.55}
+.markdown-outline-empty{margin:10px 14px;opacity:.6;line-height:1.6}
+.markdown-outline-row{display:flex;align-items:center;min-height:30px;padding-right:6px;margin:1px 5px;border-radius:5px}
+.markdown-outline-row:hover{background:color-mix(in srgb,currentColor 6%,transparent)}
+.markdown-outline-row.active{background:color-mix(in srgb,#579eee 16%,transparent);color:#579eee}
+.markdown-outline-toggle{display:flex;align-items:center;justify-content:center;width:20px;height:26px;flex-shrink:0;padding:0;border:0;background:transparent;color:inherit;border-radius:4px}
+.markdown-outline-heading{flex:1;min-width:0;text-align:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;border:0;background:transparent;color:inherit;padding:5px 3px;font:inherit}
+.markdown-outline button{cursor:pointer}
+.markdown-outline button:focus-visible{outline:1px solid var(--muted);outline-offset:-1px}

@@ -1,0 +1,18 @@
+import {afterEach,expect,it,vi} from 'vitest';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import {clipboardFilePaths,clipboardImageFiles} from '../src/main/clipboard-files';
+const roots:string[]=[];
+async function root(){const value=await fs.mkdtemp(path.join(os.tmpdir(),'todoline-clipboard-files-'));roots.push(value);return value;}
+afterEach(async()=>{vi.restoreAllMocks();await Promise.all(roots.splice(0).map(file=>fs.rm(file,{recursive:true,force:true})));});
+function packet(files:string[]){const head=Buffer.alloc(4);head.writeUInt32LE(files.length);return Buffer.concat([head,...files.flatMap(file=>{const data=Buffer.from(file,'utf16le'),size=Buffer.alloc(4);size.writeUInt32LE(data.length);return [size,data];})]);}
+it('reads Unicode and UNC file paths in exact clipboard order including duplicates',()=>{const files=['E:\\中文 😀\\图.png','\\\\server\\share\\图 2.JPG','E:\\中文 😀\\图.png'];expect(clipboardFilePaths(packet(files))).toEqual(files);expect(clipboardFilePaths(packet([]))).toEqual([]);});
+it.each(['relative.png','C:relative.png','\\rooted.png','\\\\.\\device.png','\\\\?\\C:\\device.png','C:\\a\0b.png'])('rejects invalid or device file path %s',file=>expect(()=>clipboardFilePaths(packet([file]))).toThrow('文件列表无效'));
+it.each([Buffer.alloc(0),Buffer.from([1,0,0,0]),Buffer.from([233,3,0,0]),Buffer.from([1,0,0,0,1,0,0,0,65]),Buffer.concat([packet([]),Buffer.alloc(1)]),Buffer.from([1,0,0,0,2,0,0,0,0,216])])('rejects malformed/truncated native packets %#',bytes=>expect(()=>clipboardFilePaths(bytes)).toThrow());
+it('loads original bytes and filenames without re-encoding and preserves duplicates',async()=>{const dir=await root(),a=path.join(dir,'中文 1.PNG'),b=path.join(dir,'动画.gif');await fs.writeFile(a,Buffer.from([1,2,3]));await fs.writeFile(b,Buffer.from([4,5]));const images=await clipboardImageFiles([b,a,b]);expect(images?.map(i=>i.name)).toEqual(['动画.gif','中文 1.PNG','动画.gif']);expect(images?.map(i=>Array.from(i.data))).toEqual([[4,5],[1,2,3],[4,5]]);});
+it('does not open any file from a mixed or unsupported selection',async()=>{const open=vi.spyOn(fs,'open');expect(await clipboardImageFiles(['C:\\missing.png','C:\\document.txt'])).toBeUndefined();expect(await clipboardImageFiles([])).toBeUndefined();expect(open).not.toHaveBeenCalled();});
+it('reports a missing later file instead of returning a partial batch',async()=>{const dir=await root(),a=path.join(dir,'first.png');await fs.writeFile(a,'valid first bytes');await expect(clipboardImageFiles([a,path.join(dir,'已删除.png')])).rejects.toThrow('已删除.png');});
+it('rejects empty image files and directories',async()=>{const dir=await root(),empty=path.join(dir,'empty.png'),folder=path.join(dir,'folder.png');await fs.writeFile(empty,'');await fs.mkdir(folder);await expect(clipboardImageFiles([empty])).rejects.toThrow('为空');await expect(clipboardImageFiles([folder])).rejects.toThrow();});
+it('rejects an oversized file before allocating its bytes',async()=>{const dir=await root(),file=path.join(dir,'large.png'),handle=await fs.open(file,'w');await handle.truncate(100*1024*1024+1);await handle.close();await expect(clipboardImageFiles([file])).rejects.toThrow('批次过大');});
+it.each(['size','mtimeMs','ctimeMs'])('rejects files changed during the read: %s',async field=>{const close=vi.fn(),stat=vi.fn().mockResolvedValueOnce({isFile:()=>true,size:2,mtimeMs:1,ctimeMs:1}).mockResolvedValueOnce({size:2,mtimeMs:1,ctimeMs:1,[field]:3});vi.spyOn(fs,'open').mockResolvedValue({stat,read:vi.fn().mockResolvedValue({bytesRead:2}),close} as any);await expect(clipboardImageFiles(['C:\\changed.png'])).rejects.toThrow('发生变化');expect(close).toHaveBeenCalledOnce();});

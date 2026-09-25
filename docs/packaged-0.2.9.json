@@ -1,0 +1,34 @@
+{
+  "version": "0.2.9",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "packagedE2E": {
+    "passed": 4,
+    "failed": 0,
+    "executable": "dist/release-0.2.9/win-unpacked/TodoLine Electron.exe",
+    "cases": [
+      "Blank tab Markdown conversion and undo",
+      "Outline navigation and heading editing",
+      "TDE/Markdown conversion without success banner, images and usable recovery copy",
+      "Ctrl+1 through Ctrl+6 heading toggles"
+    ]
+  },
+  "packagedUI": {
+    "result": "passed",
+    "checks": [
+      "Formula/code/table icons 16x16 with equal spacing and zero vertical center offset",
+      "Heading menu mouse and keyboard selection, editor focus restoration",
+      "Formula insertion",
+      "Dark/light/green themed dropdown without focus outline",
+      "Markdown top inset 14px with toolbar shown or hidden, outline top 8px plus title padding",
+      "TDE sidebar spacing retained"
+    ],
+    "screenshots": [
+      ".cache/md-toolbar-P6c43G/dark.png",
+      ".cache/md-toolbar-P6c43G/light.png",
+      ".cache/md-toolbar-P6c43G/green.png",
+      ".cache/md-spacing-FsOFVJ/layout.png"
+    ]
+  },
+  "scope": "Changed features and direct regressions only; no full-suite rerun"
+}

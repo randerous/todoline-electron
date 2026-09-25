@@ -1,0 +1,43 @@
+{
+  "version": "0.1.44",
+  "menus": {
+    "toolbar": [
+      {
+        "width": 10,
+        "height": 10,
+        "y": 299.41668701171875,
+        "border": "1.33333px",
+        "background": "rgb(212, 217, 227)",
+        "color": "rgb(212, 217, 227)"
+      },
+      {
+        "width": 10,
+        "height": 10,
+        "y": 299.41668701171875,
+        "border": "1.33333px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(212, 217, 227)"
+      }
+    ],
+    "context": [
+      {
+        "width": 10,
+        "height": 10,
+        "y": 632.25,
+        "border": "1.33333px",
+        "background": "rgb(212, 217, 227)",
+        "color": "rgb(212, 217, 227)"
+      },
+      {
+        "width": 10,
+        "height": 10,
+        "y": 632.25,
+        "border": "1.33333px",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(118, 175, 247)"
+      }
+    ]
+  },
+  "saveAndReopen": true,
+  "screenshots": "E:\\todoline\\TodoLine-Electron\\.cache\\release-0.1.44-ZTb2v4"
+}

@@ -1,0 +1,38 @@
+{
+  "version": "0.2.10",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "packagedE2E": {
+    "passed": 4,
+    "failed": 0,
+    "executable": "dist/release-0.2.10/win-unpacked/TodoLine Electron.exe",
+    "cases": [
+      "Reminder preference persists after restart",
+      "Quick search clears highlights on blur and selects text on refocus",
+      "Converted Markdown remains in global recents across tabs and restart",
+      "Closed TDE is first in toolbar and home recents after restart; empty draft deletion stays excluded"
+    ]
+  },
+  "packagedUI": {
+    "result": "passed",
+    "checks": [
+      "Titlebar icon opens settings at top left, toggles closed, works with hidden toolbar",
+      "Both settings entrances share reminder preference",
+      "Reminder dropdown has no blue focus outline",
+      "File and body context menu metrics match: 12px font, 28px row, 5px/10px padding",
+      "Export, format, table and list menus use compact aligned rows",
+      "Recent search input has no outer focus ring",
+      "Markdown heading selection using mouse and keyboard, formula insertion",
+      "Dark, light and green themed Markdown picker",
+      "Formula, code and table icons have equal spacing and centered 16px SVGs"
+    ],
+    "screenshots": [
+      ".cache/settings-menu-sxdFOS/settings.png",
+      ".cache/settings-menu-sxdFOS/file-menu.png",
+      ".cache/md-toolbar-WA3FYH/dark.png",
+      ".cache/md-toolbar-WA3FYH/light.png",
+      ".cache/md-toolbar-WA3FYH/green.png"
+    ]
+  },
+  "scope": "Changed features and direct regressions only; no full-suite rerun"
+}

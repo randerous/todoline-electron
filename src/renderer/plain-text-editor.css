@@ -1,0 +1,3 @@
+.plain-text-document{outline:none;min-height:100%;font-family:Consolas,'Microsoft YaHei',monospace;font-size:var(--editor-size,15px);line-height:var(--editor-line-spacing,1.5);white-space:pre-wrap;overflow-wrap:anywhere;tab-size:4}
+.plain-text-document p{margin:0;min-height:calc(1em * var(--editor-line-spacing,1.5));white-space:pre-wrap}
+.text-search-match{background:#f0c75a;color:#23211a;border-radius:2px}

@@ -1,0 +1,28 @@
+{
+  "version": "0.1.46",
+  "packaged": true,
+  "executable": "dist/release-0.1.46/win-unpacked/TodoLine Electron.exe",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "unitTests": { "passed": 810, "failed": 0, "files": 37 },
+  "targetedSourceE2E": { "passed": 11, "failed": 0 },
+  "finalExecutableE2E": {
+    "passed": 4,
+    "failed": 0,
+    "checks": [
+      "Link context action and Ctrl-hover cursor",
+      "Restart numbering, paired menu layout and undo",
+      "Move event to top, persist metadata and undo",
+      "Search outside main window, highlights, hide/restore, close/reopen"
+    ]
+  },
+  "embeddedExeIconMatchesIco": true,
+  "packagedPngMatchesSource": true,
+  "windowMarkUnchanged": true,
+  "iconLineProportions": [14, 16, 12],
+  "middleLineColor": "blue",
+  "searchPopupVisualCheck": "passed",
+  "compiledFilesChecked": 18,
+  "asarMatchesBuild": true,
+  "zipCRC": "passed"
+}

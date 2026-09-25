@@ -1,0 +1,25 @@
+:root{font-family:'Microsoft YaHei UI','Microsoft YaHei',sans-serif;color:#e2e8f0;background:#242a34;color-scheme:dark;--muted:#a1aec0;--edge:#3a4351;--blue:#96c4ff;--soft:#2e3949;--surface:#242a34}
+*{box-sizing:border-box}body{margin:0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+button:focus-visible{outline:1px solid var(--muted);outline-offset:-1px}
+button:disabled{opacity:.5;cursor:wait}
+button:hover:not(:disabled){filter:brightness(1.15)}
+.reminder-card{height:100vh;border:1px solid var(--edge);border-top:3px solid #72adf4;padding:15px 18px 13px;display:flex;flex-direction:column;gap:11px;overflow:auto}
+.reminder-card header{display:flex;align-items:center;gap:9px}
+.bell{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--soft);color:var(--blue);flex-shrink:0}
+header small{flex:1;font-size:12px;letter-spacing:.3px;color:var(--muted)}
+header>button{padding:4px;border-radius:4px;color:var(--muted)}
+.reminder-content{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;text-align:left;min-height:0;flex:1;overflow:auto;padding:0}
+.reminder-content p{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.7;margin:0}
+.reminder-due{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.reminder-error{font-size:12px;line-height:1.5;color:#ed9e90;margin:0;max-height:55px;overflow:auto}
+footer{display:flex;gap:6px;border-top:1px solid var(--edge);padding-top:11px}
+footer button{flex:1 1 auto;display:flex;align-items:center;justify-content:center;gap:4px;font-size:12px;white-space:nowrap;padding:8px 7px;border:1px solid var(--edge);border-radius:6px;background:var(--soft)}
+footer button.open{background:#367bc1;border-color:#367bc1;color:#fff}
+[data-theme=light]{color:#293746;background:#fff;color-scheme:light;--muted:#62738a;--edge:#dce3ec;--blue:#2568ad;--soft:#edf4fd;--surface:#fff}
+[data-theme=green]{background:#deebd5;color:#30412c;color-scheme:light;--muted:#64755b;--edge:#b7c9aa;--blue:#376d63;--soft:#cbdcc1;--surface:#deebd5}
+
+.snooze-control{display:flex;align-items:center;flex:0 1 auto;min-width:0;border:1px solid var(--edge);border-radius:6px;background:var(--soft);padding-left:7px}
+.snooze-control input{font:inherit;font-size:12px;min-width:30px;max-width:74px;color:inherit;background:transparent;border:0;outline:none;text-align:center;padding:0;box-shadow:none}
+.snooze-control input:focus{color:var(--blue)}
+.snooze-control>button{border:0;background:transparent;padding-left:2px;flex:0 0 auto}

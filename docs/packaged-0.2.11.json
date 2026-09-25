@@ -1,0 +1,34 @@
+{
+  "version": "0.2.11",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": {
+    "passed": 64,
+    "failed": 0,
+    "suites": {
+      "multi-selection": 5,
+      "editor": 27,
+      "plain-text-editor": 5,
+      "markdown-editor": 13,
+      "session": 14
+    },
+    "stage": "Implementation verification before packaging; application code unchanged since verification"
+  },
+  "packagedE2E": {
+    "passed": 6,
+    "failed": 0,
+    "executable": "dist/release-0.2.11/win-unpacked/TodoLine Electron.exe",
+    "cases": [
+      "Plain text Ctrl disjoint copy, delete, type, cut and undo",
+      "Markdown Ctrl disjoint copy, delete, type, cut and undo",
+      "TDE Ctrl disjoint copy, delete, type, cut and undo",
+      "Plain text blank canvas caret at first line or content end",
+      "Line spacing across modes and restart; recent right-click reveals without opening",
+      "Ctrl word selection and toggling; context menu preserves all ranges"
+    ]
+  },
+  "scope": "Changed features and direct regressions only; no full-suite rerun",
+  "knownLimitations": [
+    "IME composition operates on the primary selection."
+  ]
+}

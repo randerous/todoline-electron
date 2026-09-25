@@ -1,0 +1,21 @@
+// @vitest-environment jsdom
+import {afterEach,beforeAll,expect,it,vi} from 'vitest';
+import {TodoEditor} from '../src/renderer/editor';
+import {newEvent} from '../src/renderer/document';
+import {resizeTable} from '../src/renderer/table-resize';
+import {TableMap} from '@tiptap/pm/tables';
+import {parseQtHtml,serializeQtHtml} from '../src/renderer/codec';
+import {tableColumnWidths,cellDomAttrs} from '../src/renderer/table-format';
+const owners:TodoEditor[]=[];
+const html='<table width="400" cellpadding="6" style="border-color:blue;width:400px"><tr><td colspan="2" width="400">标题</td></tr><tr><td width="180" rowspan="2">左</td><td width="220">右</td></tr><tr><td>末尾</td></tr></table>';
+function setup(){const el=document.createElement('div');document.body.append(el);const owner=new TodoEditor(el,{handle:'resize',path:'resize.tde',name:'resize',revision:0,events:[{...newEvent(),id:1,content_html:html,content_text:'标题\n左右\n末尾'}]},{change:vi.fn(),selection:vi.fn(),error:vi.fn(),asset:vi.fn()});owners.push(owner);return owner;}
+beforeAll(()=>{Range.prototype.getClientRects=()=>[] as unknown as DOMRectList;Range.prototype.getBoundingClientRect=()=>({left:0,top:0,right:0,bottom:0,width:0,height:0} as DOMRect);});
+afterEach(()=>{owners.splice(0).forEach(o=>o.destroy());document.body.innerHTML='';});
+it('updates every spanned cell and table width together without changing contents or layout attributes',()=>{const owner=setup(),editor=owner.editor;editor.view.dispatch(resizeTable(editor.state.tr,0,[240,160]));const table=editor.state.doc.firstChild!,map=TableMap.get(table);expect(map.problems).toBeNull();expect(table.textContent).toBe('标题左右末尾');expect(table.attrs.layout.attributes.cellpadding).toBe('6');expect(table.attrs.layout.style['border-color']).toBe('blue');for(const p of new Set(map.map)){const cell=table.nodeAt(p)!,rect=map.findCell(p);expect(cell.attrs.colwidth).toEqual([240,160].slice(rect.left,rect.right));expect(cell.attrs.layout.attributes.width).toBe(String([240,160].slice(rect.left,rect.right).reduce((a,b)=>a+b,0)));}editor.commands.undo();expect(owner.records()[0].content_html).toBe(html);editor.commands.redo();expect(owner.records()[0].content_html).toContain('width="240"');});
+it('writes plain Qt width attributes that stay editable after parsing, without private HTML extensions',()=>{const owner=setup();owner.editor.view.dispatch(resizeTable(owner.editor.state.tr,0,[230,190]));const saved=owner.records()[0].content_html,parsed=parseQtHtml(saved);expect(parsed.readOnly).toBe(false);expect(saved).toContain('width="420"');expect(saved).toContain('width: 230px');expect(serializeQtHtml(parsed.content)).toContain('width="230"');expect(saved).not.toContain('data-colwidth');});
+it.each([[1],[0,200],[NaN,200],[Infinity,200],[-1,200],[20000,20000],[40000,1]].map(widths=>({widths})))('rejects invalid width vectors before modifying the transaction: %#',({widths})=>{const owner=setup(),tr=owner.editor.state.tr;expect(()=>resizeTable(tr,0,widths)).toThrow();expect(tr.docChanged).toBe(false);});
+it('rejects a stale table position',()=>{const owner=setup();expect(()=>resizeTable(owner.editor.state.tr,1,[100,100])).toThrow('不存在');});
+it('derives columns from unmerged cells rather than evenly splitting a spanning first row',()=>{const table=parseQtHtml(html).content[0];expect(tableColumnWidths(table.content!)).toEqual([180,220]);});
+it('uses persisted column arrays before fallback constraints and accounts for row spans',()=>{const owner=setup();owner.editor.view.dispatch(resizeTable(owner.editor.state.tr,0,[240,160]));expect(tableColumnWidths(owner.editor.state.doc.firstChild!.toJSON().content)).toEqual([240,160]);});
+it('converts absolute point widths while leaving unknown percentage widths to the browser',()=>{const table=parseQtHtml('<table><tr><td style="width:90pt">A</td><td width="50%">B</td></tr></table>').content[0];expect(tableColumnWidths(table.content!)).toEqual([120,0]);});
+it('does not export a spanned width that would overwrite Qt individual column constraints',()=>{const attrs=cellDomAttrs({colspan:2,colwidth:[240,160],layout:{attributes:{width:'400',bgcolor:'#ffffff'},style:{width:'400px','vertical-align':'middle'}}});expect(attrs.width).toBeUndefined();expect(attrs.style).not.toContain('width');expect(attrs.style).toContain('vertical-align');expect(attrs.colspan).toBe('2');});

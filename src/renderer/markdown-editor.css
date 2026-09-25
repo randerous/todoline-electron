@@ -1,0 +1,21 @@
+/* Avoid stacking the shared mount padding with Markdown canvas padding. */
+.editor-mount:has(>.markdown-document){padding-top:0}
+.markdown-document{outline:none;min-height:100%;padding:14px 34px 160px;line-height:var(--editor-line-spacing,1.5);overflow-wrap:anywhere;font-size:var(--editor-size,15px)}
+.markdown-document p{margin:0;min-height:calc(1em * var(--editor-line-spacing,1.5))}.markdown-document :is(ul,ol){margin:.55em 0;padding-left:1.6em}.markdown-document li p{margin:0}.markdown-document li>div{min-width:0}
+.markdown-document h1{font-size:1.8em}.markdown-document h2{font-size:1.5em}.markdown-document h3{font-size:1.25em}.markdown-document :is(h4,h5,h6){font-size:1.1em}.markdown-document :is(h1,h2,h3,h4,h5,h6){line-height:1.4;margin:1.1em 0 .5em;scroll-margin-top:20px}
+.markdown-document blockquote{border-left:3px solid #579eee;margin:.75em 0;padding-left:1em;opacity:.85}
+.markdown-document pre{background:color-mix(in srgb,currentColor 6%,transparent);padding:12px 15px;border-radius:7px;overflow:auto;white-space:pre;tab-size:4}
+.markdown-document code{font-family:Consolas,monospace}.markdown-document :not(pre)>code{background:color-mix(in srgb,currentColor 7%,transparent);padding:1px 4px;border-radius:3px}
+.markdown-document table{border-collapse:collapse;max-width:100%;margin:.8em 0}.markdown-document :is(td,th){border:1px solid color-mix(in srgb,currentColor 20%,transparent);padding:6px 10px;min-width:60px;position:relative}.markdown-document th{background:color-mix(in srgb,currentColor 6%,transparent)}
+.markdown-document .selectedCell:after{content:'';position:absolute;inset:0;background:#579eee33;pointer-events:none}
+.markdown-document img{max-width:100%;height:auto}.md-image-placeholder{display:inline-block;border:1px dashed currentColor;border-radius:4px;padding:5px 10px;opacity:.65}
+.markdown-document a{color:#579eee;cursor:text}.markdown-document.ctrl-held a{cursor:pointer}
+.markdown-document li[data-task]{list-style:none;position:relative}.markdown-document li[data-task]>input{position:absolute;left:-1.4em;top:.4em;margin:0;accent-color:#579eee}
+.md-formula,.md-raw{position:relative}.md-formula.inline{display:inline-block}.md-formula.block{margin:.8em 0;text-align:center;overflow:visible}.md-source-display{display:inline-block;min-width:1em;cursor:pointer}.md-source-display:focus-visible{outline:1px solid var(--muted);outline-offset:-1px}
+.md-raw{background:color-mix(in srgb,currentColor 5%,transparent);font-family:Consolas,monospace;font-size:.95em;white-space:pre-wrap}.md-raw.block{padding:10px;border-radius:5px}
+.md-source-editor{position:absolute;z-index:12;left:0;top:100%;min-width:320px;max-width:calc(100vw - 100px);padding:10px;border:1px solid var(--border);border-radius:7px;background:var(--panel,#252a33);color:var(--text,#e7eaf0);box-shadow:0 6px 24px #0004;text-align:left}
+.md-source-editor textarea{display:block;width:100%;min-height:90px;resize:vertical;background:transparent;color:inherit;border:1px solid var(--border);border-radius:4px;padding:7px;font:13px/1.5 Consolas,monospace}.md-source-editor>div{display:flex;justify-content:flex-end;gap:8px;margin-top:8px}.md-source-editor button{font-size:12px;line-height:1.5;padding:5px 12px;border:1px solid var(--border);border-radius:4px;background:transparent;color:inherit;cursor:pointer}
+.markdown-document .md-search-match{background:#e4b95d66;border-radius:2px}
+.markdown-document>:first-child{margin-top:0}
+.markdown-document .hljs-keyword,.markdown-document .hljs-selector-tag{color:#c792ea}.markdown-document .hljs-string,.markdown-document .hljs-attr{color:#a6d189}.markdown-document .hljs-number,.markdown-document .hljs-literal{color:#e6b87f}.markdown-document .hljs-comment{color:var(--muted)}.markdown-document .hljs-title,.markdown-document .hljs-built_in{color:#82b9ee}
+[data-theme=light] .markdown-document :is(.hljs-keyword,.hljs-selector-tag){color:#8041a0}[data-theme=light] .markdown-document :is(.hljs-string,.hljs-attr){color:#36702b}[data-theme=light] .markdown-document :is(.hljs-number,.hljs-literal){color:#9a5828}[data-theme=light] .markdown-document :is(.hljs-title,.hljs-built_in){color:#226d9c}

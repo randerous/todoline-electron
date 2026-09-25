@@ -1,0 +1,862 @@
+{
+  "method": "Playwright Electron launch to active contenteditable; seven runs, alternating baseline/current for TDE; hidden isolated windows; warm file cache; not cold EXE launch. Separate batches retained for transparency.",
+  "summaries": [
+    {
+      "scenario": "single-5000",
+      "baselineMedianMs": 2358,
+      "currentMedianMs": 2316,
+      "changeMs": -42,
+      "changePercent": -1.78,
+      "withinThreshold": true
+    },
+    {
+      "scenario": "restore-4x1500",
+      "baselineMedianMs": 1501,
+      "currentMedianMs": 1435,
+      "changeMs": -66,
+      "changePercent": -4.4,
+      "withinThreshold": true
+    },
+    {
+      "scenario": "markdown-active",
+      "currentMedianMs": 847,
+      "editors": [
+        1
+      ],
+      "markdownResources": [
+        "markdown-editor-nEAlcLt6.js",
+        "markdown-search-DQtMCBVa.js",
+        "markdown-editor-Dz7LlSBn.css"
+      ]
+    },
+    {
+      "scenario": "markdown-complex",
+      "currentMedianMs": 990,
+      "editors": [
+        1
+      ],
+      "markdownResources": [
+        "markdown-editor-nEAlcLt6.js",
+        "markdown-search-DQtMCBVa.js",
+        "markdown-editor-Dz7LlSBn.css",
+        "katex-kZZgQk4m.css"
+      ]
+    },
+    {
+      "scenario": "mixed-background-markdown",
+      "currentMedianMs": 1179,
+      "editors": [
+        1
+      ],
+      "markdownResources": []
+    }
+  ],
+  "paired": {
+    "timestamp": "2026-09-17T16:01:40.982Z",
+    "application": "E:\\todoline\\TodoLine-Electron",
+    "baseline": "E:\\todoline\\TodoLine-Electron\\.cache\\markdown-baseline-0.1.49",
+    "runs": 7,
+    "samples": [
+      {
+        "scenario": "single-5000",
+        "run": 0,
+        "build": "baseline",
+        "activeEditableMs": 2887,
+        "paintedMs": 3325,
+        "editors": 1,
+        "memoryMB": 636,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 0,
+        "build": "current",
+        "activeEditableMs": 2510,
+        "paintedMs": 2890,
+        "editors": 1,
+        "memoryMB": 787,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 1,
+        "build": "current",
+        "activeEditableMs": 2316,
+        "paintedMs": 2763,
+        "editors": 1,
+        "memoryMB": 785,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 1,
+        "build": "baseline",
+        "activeEditableMs": 2539,
+        "paintedMs": 2941,
+        "editors": 1,
+        "memoryMB": 786,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 2,
+        "build": "baseline",
+        "activeEditableMs": 2403,
+        "paintedMs": 2832,
+        "editors": 1,
+        "memoryMB": 786,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 2,
+        "build": "current",
+        "activeEditableMs": 2454,
+        "paintedMs": 2869,
+        "editors": 1,
+        "memoryMB": 786,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 3,
+        "build": "current",
+        "activeEditableMs": 2317,
+        "paintedMs": 2704,
+        "editors": 1,
+        "memoryMB": 790,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 3,
+        "build": "baseline",
+        "activeEditableMs": 2358,
+        "paintedMs": 2797,
+        "editors": 1,
+        "memoryMB": 788,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 4,
+        "build": "baseline",
+        "activeEditableMs": 2279,
+        "paintedMs": 2681,
+        "editors": 1,
+        "memoryMB": 783,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 4,
+        "build": "current",
+        "activeEditableMs": 2217,
+        "paintedMs": 2607,
+        "editors": 1,
+        "memoryMB": 782,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 5,
+        "build": "current",
+        "activeEditableMs": 2249,
+        "paintedMs": 2660,
+        "editors": 1,
+        "memoryMB": 782,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 5,
+        "build": "baseline",
+        "activeEditableMs": 2235,
+        "paintedMs": 2643,
+        "editors": 1,
+        "memoryMB": 791,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 6,
+        "build": "baseline",
+        "activeEditableMs": 2172,
+        "paintedMs": 2591,
+        "editors": 1,
+        "memoryMB": 788,
+        "markdownResources": []
+      },
+      {
+        "scenario": "single-5000",
+        "run": 6,
+        "build": "current",
+        "activeEditableMs": 2103,
+        "paintedMs": 2489,
+        "editors": 1,
+        "memoryMB": 788,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 0,
+        "build": "baseline",
+        "activeEditableMs": 1598,
+        "paintedMs": 1760,
+        "editors": 1,
+        "memoryMB": 679,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 0,
+        "build": "current",
+        "activeEditableMs": 1631,
+        "paintedMs": 1797,
+        "editors": 1,
+        "memoryMB": 678,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 1,
+        "build": "current",
+        "activeEditableMs": 1659,
+        "paintedMs": 1819,
+        "editors": 1,
+        "memoryMB": 674,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 1,
+        "build": "baseline",
+        "activeEditableMs": 1422,
+        "paintedMs": 1570,
+        "editors": 1,
+        "memoryMB": 677,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 2,
+        "build": "baseline",
+        "activeEditableMs": 1561,
+        "paintedMs": 1700,
+        "editors": 1,
+        "memoryMB": 679,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 2,
+        "build": "current",
+        "activeEditableMs": 1419,
+        "paintedMs": 1564,
+        "editors": 1,
+        "memoryMB": 677,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 3,
+        "build": "current",
+        "activeEditableMs": 1435,
+        "paintedMs": 1589,
+        "editors": 1,
+        "memoryMB": 675,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 3,
+        "build": "baseline",
+        "activeEditableMs": 1501,
+        "paintedMs": 1646,
+        "editors": 1,
+        "memoryMB": 674,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 4,
+        "build": "baseline",
+        "activeEditableMs": 1503,
+        "paintedMs": 1647,
+        "editors": 1,
+        "memoryMB": 679,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 4,
+        "build": "current",
+        "activeEditableMs": 1483,
+        "paintedMs": 1618,
+        "editors": 1,
+        "memoryMB": 677,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 5,
+        "build": "current",
+        "activeEditableMs": 1348,
+        "paintedMs": 1490,
+        "editors": 1,
+        "memoryMB": 680,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 5,
+        "build": "baseline",
+        "activeEditableMs": 1350,
+        "paintedMs": 1480,
+        "editors": 1,
+        "memoryMB": 678,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 6,
+        "build": "baseline",
+        "activeEditableMs": 1313,
+        "paintedMs": 1440,
+        "editors": 1,
+        "memoryMB": 675,
+        "markdownResources": []
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 6,
+        "build": "current",
+        "activeEditableMs": 1382,
+        "paintedMs": 1517,
+        "editors": 1,
+        "memoryMB": 676,
+        "markdownResources": []
+      }
+    ]
+  },
+  "separateBatches": {
+    "baseline": {
+      "timestamp": "2026-09-17T15:58:56.898Z",
+      "application": "E:\\todoline\\TodoLine-Electron\\.cache\\markdown-baseline-0.1.49",
+      "runs": 7,
+      "samples": [
+        {
+          "scenario": "single-5000",
+          "run": 0,
+          "activeEditableMs": 1752,
+          "paintedMs": 3752,
+          "editors": 1,
+          "memoryMB": 620,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 1,
+          "activeEditableMs": 1146,
+          "paintedMs": 1383,
+          "editors": 1,
+          "memoryMB": 773,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 2,
+          "activeEditableMs": 1173,
+          "paintedMs": 1409,
+          "editors": 1,
+          "memoryMB": 787,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 3,
+          "activeEditableMs": 1173,
+          "paintedMs": 1424,
+          "editors": 1,
+          "memoryMB": 789,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 4,
+          "activeEditableMs": 1230,
+          "paintedMs": 1468,
+          "editors": 1,
+          "memoryMB": 785,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 5,
+          "activeEditableMs": 1241,
+          "paintedMs": 1514,
+          "editors": 1,
+          "memoryMB": 786,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 6,
+          "activeEditableMs": 1385,
+          "paintedMs": 1665,
+          "editors": 1,
+          "memoryMB": 788,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 0,
+          "activeEditableMs": 1047,
+          "paintedMs": 1146,
+          "editors": 1,
+          "memoryMB": 676,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 1,
+          "activeEditableMs": 1039,
+          "paintedMs": 1142,
+          "editors": 1,
+          "memoryMB": 674,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 2,
+          "activeEditableMs": 1060,
+          "paintedMs": 1162,
+          "editors": 1,
+          "memoryMB": 678,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 3,
+          "activeEditableMs": 1034,
+          "paintedMs": 1131,
+          "editors": 1,
+          "memoryMB": 677,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 4,
+          "activeEditableMs": 1055,
+          "paintedMs": 1160,
+          "editors": 1,
+          "memoryMB": 674,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 5,
+          "activeEditableMs": 1006,
+          "paintedMs": 1103,
+          "editors": 1,
+          "memoryMB": 678,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 6,
+          "activeEditableMs": 984,
+          "paintedMs": 1086,
+          "editors": 1,
+          "memoryMB": 676,
+          "markdownResources": []
+        }
+      ]
+    },
+    "current": {
+      "timestamp": "2026-09-17T15:59:57.179Z",
+      "application": "E:\\todoline\\TodoLine-Electron",
+      "runs": 7,
+      "samples": [
+        {
+          "scenario": "single-5000",
+          "run": 0,
+          "activeEditableMs": 1222,
+          "paintedMs": 1468,
+          "editors": 1,
+          "memoryMB": 625,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 1,
+          "activeEditableMs": 1217,
+          "paintedMs": 1467,
+          "editors": 1,
+          "memoryMB": 781,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 2,
+          "activeEditableMs": 1221,
+          "paintedMs": 1468,
+          "editors": 1,
+          "memoryMB": 786,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 3,
+          "activeEditableMs": 1273,
+          "paintedMs": 1517,
+          "editors": 1,
+          "memoryMB": 787,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 4,
+          "activeEditableMs": 1223,
+          "paintedMs": 1464,
+          "editors": 1,
+          "memoryMB": 786,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 5,
+          "activeEditableMs": 1287,
+          "paintedMs": 1573,
+          "editors": 1,
+          "memoryMB": 787,
+          "markdownResources": []
+        },
+        {
+          "scenario": "single-5000",
+          "run": 6,
+          "activeEditableMs": 1513,
+          "paintedMs": 1799,
+          "editors": 1,
+          "memoryMB": 787,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 0,
+          "activeEditableMs": 1153,
+          "paintedMs": 1273,
+          "editors": 1,
+          "memoryMB": 681,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 1,
+          "activeEditableMs": 1170,
+          "paintedMs": 1285,
+          "editors": 1,
+          "memoryMB": 677,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 2,
+          "activeEditableMs": 1133,
+          "paintedMs": 1254,
+          "editors": 1,
+          "memoryMB": 677,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 3,
+          "activeEditableMs": 1172,
+          "paintedMs": 1286,
+          "editors": 1,
+          "memoryMB": 677,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 4,
+          "activeEditableMs": 1183,
+          "paintedMs": 1297,
+          "editors": 1,
+          "memoryMB": 677,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 5,
+          "activeEditableMs": 1195,
+          "paintedMs": 1309,
+          "editors": 1,
+          "memoryMB": 678,
+          "markdownResources": []
+        },
+        {
+          "scenario": "restore-4x1500",
+          "run": 6,
+          "activeEditableMs": 1203,
+          "paintedMs": 1319,
+          "editors": 1,
+          "memoryMB": 676,
+          "markdownResources": []
+        },
+        {
+          "scenario": "markdown-active",
+          "run": 0,
+          "activeEditableMs": 850,
+          "paintedMs": 859,
+          "editors": 1,
+          "memoryMB": 587,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css"
+          ]
+        },
+        {
+          "scenario": "markdown-active",
+          "run": 1,
+          "activeEditableMs": 815,
+          "paintedMs": 826,
+          "editors": 1,
+          "memoryMB": 590,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css"
+          ]
+        },
+        {
+          "scenario": "markdown-active",
+          "run": 2,
+          "activeEditableMs": 828,
+          "paintedMs": 843,
+          "editors": 1,
+          "memoryMB": 587,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css"
+          ]
+        },
+        {
+          "scenario": "markdown-active",
+          "run": 3,
+          "activeEditableMs": 847,
+          "paintedMs": 859,
+          "editors": 1,
+          "memoryMB": 586,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css"
+          ]
+        },
+        {
+          "scenario": "markdown-active",
+          "run": 4,
+          "activeEditableMs": 823,
+          "paintedMs": 829,
+          "editors": 1,
+          "memoryMB": 586,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css"
+          ]
+        },
+        {
+          "scenario": "markdown-active",
+          "run": 5,
+          "activeEditableMs": 854,
+          "paintedMs": 866,
+          "editors": 1,
+          "memoryMB": 587,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css"
+          ]
+        },
+        {
+          "scenario": "markdown-active",
+          "run": 6,
+          "activeEditableMs": 865,
+          "paintedMs": 879,
+          "editors": 1,
+          "memoryMB": 586,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css"
+          ]
+        },
+        {
+          "scenario": "markdown-complex",
+          "run": 0,
+          "activeEditableMs": 990,
+          "paintedMs": 1035,
+          "editors": 1,
+          "memoryMB": 631,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css",
+            "katex-kZZgQk4m.css"
+          ]
+        },
+        {
+          "scenario": "markdown-complex",
+          "run": 1,
+          "activeEditableMs": 984,
+          "paintedMs": 1046,
+          "editors": 1,
+          "memoryMB": 634,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css",
+            "katex-kZZgQk4m.css"
+          ]
+        },
+        {
+          "scenario": "markdown-complex",
+          "run": 2,
+          "activeEditableMs": 983,
+          "paintedMs": 1045,
+          "editors": 1,
+          "memoryMB": 637,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css",
+            "katex-kZZgQk4m.css"
+          ]
+        },
+        {
+          "scenario": "markdown-complex",
+          "run": 3,
+          "activeEditableMs": 991,
+          "paintedMs": 1049,
+          "editors": 1,
+          "memoryMB": 638,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css",
+            "katex-kZZgQk4m.css"
+          ]
+        },
+        {
+          "scenario": "markdown-complex",
+          "run": 4,
+          "activeEditableMs": 1026,
+          "paintedMs": 1086,
+          "editors": 1,
+          "memoryMB": 640,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css",
+            "katex-kZZgQk4m.css"
+          ]
+        },
+        {
+          "scenario": "markdown-complex",
+          "run": 5,
+          "activeEditableMs": 1014,
+          "paintedMs": 1069,
+          "editors": 1,
+          "memoryMB": 639,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css",
+            "katex-kZZgQk4m.css"
+          ]
+        },
+        {
+          "scenario": "markdown-complex",
+          "run": 6,
+          "activeEditableMs": 988,
+          "paintedMs": 1027,
+          "editors": 1,
+          "memoryMB": 633,
+          "markdownResources": [
+            "markdown-editor-nEAlcLt6.js",
+            "markdown-search-DQtMCBVa.js",
+            "markdown-editor-Dz7LlSBn.css",
+            "katex-kZZgQk4m.css"
+          ]
+        },
+        {
+          "scenario": "mixed-background-markdown",
+          "run": 0,
+          "activeEditableMs": 1124,
+          "paintedMs": 1248,
+          "editors": 1,
+          "memoryMB": 674,
+          "markdownResources": []
+        },
+        {
+          "scenario": "mixed-background-markdown",
+          "run": 1,
+          "activeEditableMs": 1234,
+          "paintedMs": 1352,
+          "editors": 1,
+          "memoryMB": 670,
+          "markdownResources": []
+        },
+        {
+          "scenario": "mixed-background-markdown",
+          "run": 2,
+          "activeEditableMs": 1168,
+          "paintedMs": 1299,
+          "editors": 1,
+          "memoryMB": 673,
+          "markdownResources": []
+        },
+        {
+          "scenario": "mixed-background-markdown",
+          "run": 3,
+          "activeEditableMs": 1179,
+          "paintedMs": 1318,
+          "editors": 1,
+          "memoryMB": 673,
+          "markdownResources": []
+        },
+        {
+          "scenario": "mixed-background-markdown",
+          "run": 4,
+          "activeEditableMs": 1202,
+          "paintedMs": 1325,
+          "editors": 1,
+          "memoryMB": 670,
+          "markdownResources": []
+        },
+        {
+          "scenario": "mixed-background-markdown",
+          "run": 5,
+          "activeEditableMs": 1178,
+          "paintedMs": 1298,
+          "editors": 1,
+          "memoryMB": 658,
+          "markdownResources": []
+        },
+        {
+          "scenario": "mixed-background-markdown",
+          "run": 6,
+          "activeEditableMs": 1201,
+          "paintedMs": 1326,
+          "editors": 1,
+          "memoryMB": 670,
+          "markdownResources": []
+        }
+      ]
+    }
+  }
+}

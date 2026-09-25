@@ -1,0 +1,243 @@
+{
+  "date": "2026-09-15",
+  "before": {
+    "timestamp": "2026-09-15T12:17:08.990Z",
+    "samples": [
+      {
+        "scenario": "single-5000",
+        "run": 0,
+        "activeEditableMs": 1824,
+        "paintedMs": 3041,
+        "editors": 1,
+        "memoryMB": 625
+      },
+      {
+        "scenario": "single-5000",
+        "run": 1,
+        "activeEditableMs": 1705,
+        "paintedMs": 2922,
+        "editors": 1,
+        "memoryMB": 775
+      },
+      {
+        "scenario": "single-5000",
+        "run": 2,
+        "activeEditableMs": 1924,
+        "paintedMs": 3149,
+        "editors": 1,
+        "memoryMB": 779
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 0,
+        "activeEditableMs": 2309,
+        "paintedMs": 4315,
+        "editors": 4,
+        "memoryMB": 633
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 1,
+        "activeEditableMs": 2208,
+        "paintedMs": 4222,
+        "editors": 4,
+        "memoryMB": 799
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 2,
+        "activeEditableMs": 2197,
+        "paintedMs": 4203,
+        "editors": 4,
+        "memoryMB": 800
+      }
+    ]
+  },
+  "after": {
+    "timestamp": "2026-09-15T12:24:19.559Z",
+    "samples": [
+      {
+        "scenario": "single-5000",
+        "run": 0,
+        "activeEditableMs": 1214,
+        "paintedMs": 1490,
+        "editors": 1,
+        "memoryMB": 610
+      },
+      {
+        "scenario": "single-5000",
+        "run": 1,
+        "activeEditableMs": 1206,
+        "paintedMs": 2375,
+        "editors": 1,
+        "memoryMB": 767
+      },
+      {
+        "scenario": "single-5000",
+        "run": 2,
+        "activeEditableMs": 1241,
+        "paintedMs": 1495,
+        "editors": 1,
+        "memoryMB": 762
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 0,
+        "activeEditableMs": 874,
+        "paintedMs": 983,
+        "editors": 1,
+        "memoryMB": 668
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 1,
+        "activeEditableMs": 914,
+        "paintedMs": 1006,
+        "editors": 1,
+        "memoryMB": 664
+      },
+      {
+        "scenario": "restore-4x1500",
+        "run": 2,
+        "activeEditableMs": 923,
+        "paintedMs": 1992,
+        "editors": 1,
+        "memoryMB": 666
+      }
+    ]
+  },
+  "geometryComparison": [
+    {
+      "build": "released-0.1.43",
+      "clamped": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1708,
+          "height": 920
+        },
+        "display": {
+          "accelerometerSupport": "unknown",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1707,
+            "height": 960
+          },
+          "colorDepth": 24,
+          "colorSpace": "{primaries:BT709, transfer:SRGB, matrix:RGB, range:FULL}",
+          "depthPerComponent": 8,
+          "detected": true,
+          "displayFrequency": 144,
+          "id": 163787630,
+          "internal": false,
+          "label": "S2719DGF",
+          "maximumCursorSize": {
+            "width": 0,
+            "height": 0
+          },
+          "monochrome": false,
+          "nativeOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scaleFactor": 1.5,
+          "size": {
+            "width": 1707,
+            "height": 960
+          },
+          "workArea": {
+            "x": 0,
+            "y": 0,
+            "width": 1707,
+            "height": 920
+          },
+          "workAreaSize": {
+            "width": 1707,
+            "height": 920
+          },
+          "touchSupport": "unknown"
+        }
+      },
+      "normal": {
+        "x": 30,
+        "y": 25,
+        "width": 850,
+        "height": 601
+      },
+      "restored": {
+        "x": 30,
+        "y": 25,
+        "width": 850,
+        "height": 604
+      }
+    },
+    {
+      "build": "optimized",
+      "clamped": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1708,
+          "height": 920
+        },
+        "display": {
+          "accelerometerSupport": "unknown",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1707,
+            "height": 960
+          },
+          "colorDepth": 24,
+          "colorSpace": "{primaries:BT709, transfer:SRGB, matrix:RGB, range:FULL}",
+          "depthPerComponent": 8,
+          "detected": true,
+          "displayFrequency": 144,
+          "id": 163787630,
+          "internal": false,
+          "label": "S2719DGF",
+          "maximumCursorSize": {
+            "width": 0,
+            "height": 0
+          },
+          "monochrome": false,
+          "nativeOrigin": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "scaleFactor": 1.5,
+          "size": {
+            "width": 1707,
+            "height": 960
+          },
+          "workArea": {
+            "x": 0,
+            "y": 0,
+            "width": 1707,
+            "height": 920
+          },
+          "workAreaSize": {
+            "width": 1707,
+            "height": 920
+          },
+          "touchSupport": "unknown"
+        }
+      },
+      "normal": {
+        "x": 30,
+        "y": 25,
+        "width": 850,
+        "height": 601
+      },
+      "restored": {
+        "x": 30,
+        "y": 25,
+        "width": 850,
+        "height": 604
+      }
+    }
+  ]
+}

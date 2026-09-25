@@ -1,0 +1,14 @@
+import { build } from 'esbuild';
+import './prepare-runtime.mjs';
+import './build-clipboard.mjs';
+import './build-image-codec.mjs';
+import { build as viteBuild } from 'vite';
+import { copyFile, mkdir } from 'node:fs/promises';
+await mkdir('out/main',{recursive:true});
+await copyFile('.cache/native/electron.node','out/main/better_sqlite3.node');
+await build({ entryPoints: ['src/main/index.ts'], outfile: 'out/main/index.cjs', bundle: true, platform: 'node', format: 'cjs', external: ['electron', 'better-sqlite3'], sourcemap: true });
+await build({ entryPoints: ['src/main/db-worker.ts'], outfile: 'out/main/db-worker.cjs', bundle: true, platform: 'node', format: 'cjs', external: ['electron', 'better-sqlite3'], sourcemap: true });
+await build({ entryPoints: ['src/main/preload.ts'], outfile: 'out/main/preload.cjs', bundle: true, platform: 'node', format: 'cjs', external: ['electron'] });
+await build({ entryPoints: ['src/main/image-preload.ts'], outfile: 'out/main/image-preload.cjs', bundle: true, platform: 'node', format: 'cjs', external: ['electron'] });
+await build({ entryPoints: ['src/main/reminder-preload.ts'], outfile: 'out/main/reminder-preload.cjs', bundle: true, platform: 'node', format: 'cjs', external: ['electron'] });
+await viteBuild();

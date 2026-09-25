@@ -1,0 +1,43 @@
+{
+  "version": "0.2.8",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": {
+    "passed": 103,
+    "failed": 0,
+    "suites": {
+      "markdown-store": 15,
+      "plain-text-store": 15,
+      "file-name": 24,
+      "markdown-runtime": 7,
+      "markdown-editor": 13,
+      "runtime": 13,
+      "session": 13,
+      "format-conversion": 3
+    }
+  },
+  "packagedE2E": {
+    "passed": 13,
+    "failedAfterRerun": 0,
+    "executable": "dist/release-0.2.8/win-unpacked/TodoLine Electron.exe",
+    "suites": {
+      "rename-format": 5,
+      "rename": 4,
+      "word-wrap": 2,
+      "plain-text": 1,
+      "markdown": 1
+    },
+    "rerun": "The word-wrap case initially timed out while taking its optional screenshot after UI assertions passed. Removed the optional screenshot; all assertions including unchanged file bytes passed on rerun."
+  },
+  "coverage": [
+    "Full filename and extension editing without tab width changes",
+    "Markdown/plain-text mode switching, original bytes, recent paths and restart",
+    "TDE/Markdown conversion with images, recovery copies and restart",
+    "New empty tab and plain text converted to native database",
+    "Collision, external modification and failed-save protection",
+    "Ctrl+1 through Ctrl+6 heading toggles scoped to the Markdown editor",
+    "UTF-16 LE/BE renamed to UTF-8 Markdown",
+    "Word wrap across all editor modes, selection preservation, persistence and unchanged bytes"
+  ],
+  "scope": "Changed features and direct regressions only; no full-suite rerun"
+}

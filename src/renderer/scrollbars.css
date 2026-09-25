@@ -1,0 +1,16 @@
+/* Keep the native hit area steady: only the painted thumb grows on hover. */
+:root *{scrollbar-width:auto;scrollbar-color:auto}
+::-webkit-scrollbar{width:14px;height:14px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{min-height:28px;min-width:28px;border:5px solid transparent;border-radius:999px;background:color-mix(in srgb,var(--muted,#718096) 65%,transparent);background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover,::-webkit-scrollbar-thumb:active{border-width:1px;background-color:var(--muted,#718096)}
+::-webkit-scrollbar-corner{background:transparent}
+::-webkit-scrollbar-button{display:none}
+/* The compact tab strip has less vertical room for its horizontal scrollbar. */
+.tabs-scroll::-webkit-scrollbar{height:10px}
+.tabs-scroll::-webkit-scrollbar-thumb{border-width:4px}
+.tabs-scroll::-webkit-scrollbar-thumb:hover,.tabs-scroll::-webkit-scrollbar-thumb:active{border-width:1px}
+@media(forced-colors:active){
+  ::-webkit-scrollbar-thumb{background-color:CanvasText;forced-color-adjust:none}
+  ::-webkit-scrollbar-thumb:hover,::-webkit-scrollbar-thumb:active{background-color:Highlight}
+}

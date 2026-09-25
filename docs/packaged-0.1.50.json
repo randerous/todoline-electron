@@ -1,0 +1,46 @@
+{
+  "version": "0.1.50",
+  "executable": "dist/release-0.1.50/win-unpacked/TodoLine Electron.exe",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": {
+    "passed": 151,
+    "failed": 0,
+    "files": 14
+  },
+  "targetedSourceE2E": {
+    "passed": 32,
+    "failed": 0
+  },
+  "packagedExecutableValidation": {
+    "initialPass": {
+      "passed": 10,
+      "failed": 1
+    },
+    "issue": "At the document bottom, a delayed scroll event could change outline highlighting from the last heading to the preceding chapter.",
+    "resolution": "At the bottom, include visible headings below the viewport-top threshold when calculating the active heading.",
+    "finalRepeat": {
+      "passed": 6,
+      "failed": 0,
+      "uniqueChecks": 2,
+      "repetitions": 3
+    },
+    "checks": [
+      "Native Markdown open, edit, save and unchanged-byte preservation",
+      "Session restore and real file drop with duplicate-tab prevention",
+      "Rendered HTML paste, editable LaTeX and code blocks",
+      "Pristine blank TDE conversion, undo and Markdown Save As",
+      "Previously edited TDE stays TDE after clearing",
+      "Local images, Save As, rename and offline formula PDF export",
+      "Outline folding, title updates and final-heading highlight after scroll",
+      "Lazy-load scroll restoration and search across unopened editor tabs",
+      "Lazy code highlighting and local image copying across Markdown documents",
+      "Existing TDE links retain their context action and Ctrl pointer"
+    ]
+  },
+  "verificationScope": "Related functionality only; no full test suite. After the outline fix, only the affected navigation and scroll restoration checks were repeated on the final executable.",
+  "compiledFilesChecked": 101,
+  "asarMatchesBuild": true,
+  "zipCRC": "passed",
+  "zipExecutableAndAsarMatch": true
+}

@@ -1,0 +1,18 @@
+{
+  "version": "0.2.4",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "unitTestsDuringImplementation": { "passed": 20, "failed": 0 },
+  "sourceSearchE2E": { "passed": 10, "failed": 0 },
+  "responsiveLayout": {
+    "passed": 4,
+    "cases": [
+      { "windowWidth": 800, "sidebarWidth": 248, "direction": "column" },
+      { "windowWidth": 1100, "sidebarWidth": 248, "direction": "row" },
+      { "windowWidth": 1400, "sidebarWidth": 440, "direction": "row" },
+      { "windowWidth": 1100, "sidebarWidth": 180, "direction": "column" }
+    ]
+  },
+  "packagedE2E": { "passed": 4, "failed": 0, "file": "quick-search.spec.ts" },
+  "scope": "Changed features and direct regressions only; no full-suite rerun"
+}

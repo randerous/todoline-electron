@@ -1,0 +1,27 @@
+{
+  "version": "0.2.3",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "unitTests": {
+    "passed": 58,
+    "failed": 0
+  },
+  "sourceClipboardE2E": {
+    "passed": 4,
+    "failed": 0
+  },
+  "packagedE2E": {
+    "passed": 10,
+    "unresolvedFailures": 0,
+    "files": {
+      "workflow-023": 5,
+      "event-navigation": 5
+    }
+  },
+  "powerPointTextRangePaste": {
+    "text": "APasteTextB",
+    "shapes": 1
+  },
+  "powerPointMethod": "COM insertion into a temporary existing text range; not simulated OS Ctrl+V",
+  "scope": "Changed features and direct regressions only"
+}

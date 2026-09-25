@@ -1,0 +1,21 @@
+{
+  "version": "0.1.48",
+  "executable": "dist/release-0.1.48/win-unpacked/TodoLine Electron.exe",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": { "passed": 66, "failed": 0, "files": 3 },
+  "finalExecutableE2E": {
+    "passed": 4,
+    "checks": [
+      "Ctrl+T moves current event to top; undo and shortcut label",
+      "Empty list marker removal, successive outdents, save and reopen flush left",
+      "Default ten-minute snooze, write failure recovery and persistence",
+      "Editable minutes/hours/days, invalid input retention, per-notice reset and persistence"
+    ]
+  },
+  "customReminderVisualCheck": "passed",
+  "compiledFilesChecked": 18,
+  "asarMatchesBuild": true,
+  "zipCRC": "passed",
+  "verificationScope": "Only related functionality; no full test suite"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "static.gif",
+    "width": 32,
+    "height": 24,
+    "data": "R0lGODdhIAAYAIEAALRQHgAAAAAAAAAAACwAAAAAIAAYAEAILwABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJjQEBADs="
+  },
+  {
+    "name": "animated.gif",
+    "width": 32,
+    "height": 24,
+    "data": "R0lGODlhIAAYAIEAALRQHgAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQIFAAAACwAAAAAIAAYAAAILwABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJjQEBACH5BAgUAAAALAAAAAAgABgAgR5u3AAAAAAAAAAAAAgvAAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmNAQEAOw=="
+  },
+  {
+    "name": "transparent.gif",
+    "width": 32,
+    "height": 24,
+    "data": "R0lGODlhIAAYAIEAAAAAALRQHgAAAAAAACH5BAEAAAAALAAAAAAgABgAQAhXAAEIHEiwoMGDCAMoXMiwocOFCR9KlBhxokWIBy9qDICwo8ePIEN23HixIsmHJk82TKkSo8iXMGPKnDmwJcqMNlfizOmyIE+GLG0GbTlUZdGTNJMqLRgQADs="
+  },
+  {
+    "name": "lossy.webp",
+    "width": 32,
+    "height": 24,
+    "data": "UklGRkoAAABXRUJQVlA4ID4AAABwAwCdASogABgAPjEYikOiIaEUBAAgAwSygDsAfgB+AABEQnAA/u8pR//9eiDxBv1oP//ucAqQ2f4kAAAAAA=="
+  },
+  {
+    "name": "lossless-alpha.webp",
+    "width": 32,
+    "height": 24,
+    "data": "UklGRh4AAABXRUJQVlA4TBEAAAAvH8AFEAdQqNLWo4CBiOh/AAA="
+  },
+  {
+    "name": "animated.webp",
+    "width": 32,
+    "height": 24,
+    "data": "UklGRogAAABXRUJQVlA4WAoAAAACAAAAHwAAFwAAQU5JTQYAAAAAAAAAAABBTk1GKgAAAAAAAAAAAB8AABcAAMgAAAJWUDhMEQAAAC8fwAUAB1Co0taj/4GI6H8AAEFOTUYqAAAAAAAAAAAAHwAAFwAAyAAAAFZQOEwRAAAALx/ABQAHULd6lLv/gYjofwAA"
+  }
+]

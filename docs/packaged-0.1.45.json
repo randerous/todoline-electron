@@ -1,0 +1,60 @@
+{
+  "version": "0.1.45",
+  "packaged": true,
+  "scrollbars": {
+    "document": {
+      "idle": {
+        "clientWidth": 979,
+        "clientHeight": 701,
+        "scrollHeight": 7021,
+        "scrollbar": "14px",
+        "standard": "auto",
+        "border": "4.66667px"
+      },
+      "hover": {
+        "clientWidth": 979,
+        "clientHeight": 701,
+        "scrollHeight": 7021,
+        "scrollbar": "14px",
+        "standard": "auto",
+        "border": "0.666667px"
+      },
+      "dragScrollTop": 1002
+    },
+    "navigation": {
+      "idle": {
+        "clientWidth": 234,
+        "clientHeight": 612,
+        "scrollHeight": 2855,
+        "scrollbar": "14px",
+        "standard": "auto",
+        "border": "4.66667px"
+      },
+      "hover": {
+        "clientWidth": 234,
+        "clientHeight": 612,
+        "scrollHeight": 2855,
+        "scrollbar": "14px",
+        "standard": "auto",
+        "border": "0.666667px"
+      },
+      "dragScrollTop": 466.6666564941406
+    }
+  },
+  "screenshots": "E:\\todoline\\TodoLine-Electron\\.cache\\release-0.1.45-bFMwW9",
+  "saveAndReopen": true,
+  "romanMenuRemoved": true,
+  "embeddedExeIconMatchesIco": true,
+  "packagedPngMatchesSource": true,
+  "windowMarkUnchanged": true,
+  "iconLineProportions": [
+    18,
+    12,
+    14
+  ],
+  "typecheck": "passed",
+  "relatedE2E": {
+    "passed": 8,
+    "failed": 0
+  }
+}

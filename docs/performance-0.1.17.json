@@ -1,0 +1,47 @@
+{
+  "sample": {
+    "events": 5000,
+    "paragraphs": 5000,
+    "images": 0
+  },
+  "firstEditableMs": 1360.1816,
+  "keyP95Ms": 17,
+  "keySamples": 78,
+  "search": {
+    "ms": 15.900000095367432,
+    "hits": 1
+  },
+  "memory": [
+    {
+      "type": "Browser",
+      "workingSetKB": 152364,
+      "peakWorkingSetKB": 156520
+    },
+    {
+      "type": "GPU",
+      "workingSetKB": 160456,
+      "peakWorkingSetKB": 174520
+    },
+    {
+      "type": "Utility",
+      "workingSetKB": 41924,
+      "peakWorkingSetKB": 41928
+    },
+    {
+      "type": "Utility",
+      "workingSetKB": 72648,
+      "peakWorkingSetKB": 75764
+    },
+    {
+      "type": "Tab",
+      "workingSetKB": 377952,
+      "peakWorkingSetKB": 380048
+    }
+  ],
+  "totalWorkingSetMB": 786.46875,
+  "scroll": {
+    "frames": 30,
+    "ms": 1096.2999999523163
+  },
+  "timestamp": "2026-09-09T10:48:00.975Z"
+}

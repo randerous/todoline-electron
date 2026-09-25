@@ -1,0 +1,13 @@
+.event-navigation{position:relative;padding-bottom:12px;overflow-anchor:none}
+.event-navigation-rows{position:relative}
+.event-navigation .outline-item{position:absolute;left:0;right:0;overflow:hidden}
+.event-navigation .outline-item.in-view{background:color-mix(in srgb,var(--blue) 12%,var(--panel));--nav-indicator:color-mix(in srgb,var(--blue) 65%,transparent)}
+.event-navigation .outline-item.search-hit{background:color-mix(in srgb,var(--match) 17%,var(--panel));--nav-indicator:color-mix(in srgb,var(--match) 65%,transparent)}
+.event-navigation .outline-item.search-hit.in-view{background:color-mix(in srgb,var(--match) 34%,var(--panel));--nav-indicator:var(--match)}
+.event-navigation .outline-item:hover{background:var(--hover)}
+.event-navigation .outline-item.in-view:hover{background:color-mix(in srgb,var(--blue) 18%,var(--panel))}
+.event-navigation .outline-item.search-hit:hover{background:color-mix(in srgb,var(--match) 24%,var(--panel))}
+.event-navigation .outline-item.search-hit.in-view:hover{background:color-mix(in srgb,var(--match) 42%,var(--panel))}
+.event-navigation .outline-item.search-hit .outline-time{color:var(--muted)}
+
+.event-navigation .outline-item:is(.in-view,.search-hit)::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:2px;border-radius:3px;background:var(--nav-indicator);pointer-events:none}

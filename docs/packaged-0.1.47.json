@@ -1,0 +1,52 @@
+{
+  "version": "0.1.47",
+  "executable": true,
+  "reference": {
+    "height": 28,
+    "width": 204,
+    "radius": "4px",
+    "padding": "5px 10px",
+    "font": "12px",
+    "lineHeight": "18px",
+    "background": "rgb(42, 48, 58)"
+  },
+  "buttons": {
+    "继续编号": {
+      "height": 28,
+      "width": 100,
+      "radius": "4px",
+      "padding": "5px 10px",
+      "font": "12px",
+      "lineHeight": "18px",
+      "background": "rgb(42, 48, 58)"
+    },
+    "重新编号": {
+      "height": 28,
+      "width": 100,
+      "radius": "4px",
+      "padding": "5px 10px",
+      "font": "12px",
+      "lineHeight": "18px",
+      "background": "rgb(42, 48, 58)"
+    }
+  },
+  "arrow": {
+    "right": 964,
+    "color": "rgb(94, 104, 121)"
+  },
+  "shortcut": {
+    "right": 964,
+    "color": "rgb(94, 104, 121)"
+  },
+  "continueNumbering": "passed",
+  "screenshot": "E:\\todoline\\TodoLine-Electron\\.cache\\menu-0.1.47-WeBhxi\\menu-hover.png",
+  "iconRestoredFrom": "0.1.45",
+  "iconSourceByteComparison": "passed",
+  "embeddedExeIconMatchesIco": true,
+  "packagedPngMatchesSource": true,
+  "windowMarkUnchanged": true,
+  "productionBuild": "passed",
+  "zipCRC": "passed",
+  "asarMatchesBuild": true,
+  "verificationScope": "Only changed menus and icons; no full test suite"
+}

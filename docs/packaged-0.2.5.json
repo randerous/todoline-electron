@@ -1,0 +1,27 @@
+{
+  "version": "0.2.5",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "unitTests": { "passed": 73, "failed": 0, "files": 7 },
+  "packagedE2E": {
+    "passed": 15,
+    "failed": 0,
+    "files": {
+      "diff.spec.ts": 5,
+      "plain-text.spec.ts": 6,
+      "quick-search.spec.ts": 4
+    },
+    "executable": "dist/release-0.2.5/win-unpacked/TodoLine Electron.exe"
+  },
+  "diffVisualReview": ["dark", "light"],
+  "verifiedRegressions": [
+    "Plain text autosave, undo back to original and redo persist on disk",
+    "Diff scroll update followed by immediate difference jump",
+    "Diff unequal line widths and synchronized scrolling at EOF",
+    "8000-line Diff virtualization and distant change navigation",
+    "First TDE event without divider includes changed completion/deadline metadata",
+    "UTF-16 LE/BE encoding retained after editing",
+    "Quick search focus, highlight and Ctrl+F integration"
+  ],
+  "scope": "Changed features and direct regressions only; no full-suite rerun"
+}

@@ -1,0 +1,62 @@
+name: macOS portability
+
+# The shipped product targets Windows. These jobs build and smoke-test the
+# macOS development path (scripts/build-mac.mjs, scripts/smoke-mac.mjs) so a
+# portability regression such as the path-canonicalization rename bug fails CI.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/macos.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: macos-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-smoke:
+    name: Build · 39-step UI smoke (macOS arm64)
+    runs-on: macos-14
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - run: pnpm install --frozen-lockfile
+
+      # Electron's darwin binary + better-sqlite3 prebuilds for the Node and the
+      # Electron ABI (npmmirror mirror, so it also works behind restricted egress).
+      - name: Prepare macOS runtime
+        run: node scripts/prepare-mac.mjs
+
+      - name: Build
+        run: pnpm build:mac
+
+      - name: UI smoke test
+        run: pnpm smoke:mac
+
+      - name: Upload smoke report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-smoke
+          path: |
+            .cache/smoke/*.png
+            .cache/smoke/report.json
+          retention-days: 7
+          if-no-files-found: ignore

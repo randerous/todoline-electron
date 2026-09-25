@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "executable": "dist/release-0.2.0/win-unpacked/TodoLine Electron.exe",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": {
+    "passed": 66,
+    "failed": 0,
+    "files": 5
+  },
+  "packagedExecutableValidation": {
+    "uniqueChecksPassed": 6,
+    "unresolvedFailures": 0,
+    "initialFunctionalRun": {
+      "passed": 5,
+      "failed": 1
+    },
+    "testHarnessIssue": "The restart test counted tabs before workspace restoration completed. Wait for the restoration indicator to disappear before counting tabs.",
+    "affectedCheckRepeat": {
+      "passed": 1,
+      "failed": 0
+    },
+    "checks": [
+      "Converted Markdown shared recents after close, tab switch and restart",
+      "New-file directory for TDE and Markdown; existing-file path unchanged; preference persists after restart",
+      "Cancelled directory picker and occupied-name preservation",
+      "Plain and Ctrl-click Markdown links without paragraph NodeSelection",
+      "TDE original image dimensions, copy, button/wheel zoom, drag and Escape",
+      "Markdown original image dimensions, copy, button/wheel zoom, drag and Escape"
+    ]
+  },
+  "regressionBaseline": "Markdown Ctrl-link paragraph selection reproduced on 0.1.50 and absent on 0.2.0.",
+  "visualQA": "Settings and image viewer screenshots reviewed using source build. Optional screenshots in hidden packaged windows timed out and were removed from the functional tests.",
+  "verificationScope": "Only changed functionality tested; no full test suite.",
+  "compiledFilesChecked": 103,
+  "asarMatchesBuild": true,
+  "zipCRC": "passed",
+  "zipExecutableAndAsarMatch": true
+}

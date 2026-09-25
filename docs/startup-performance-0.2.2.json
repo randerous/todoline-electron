@@ -1,0 +1,1903 @@
+{
+  "timestamp": "2026-09-18T07:12:39.825Z",
+  "runs": 5,
+  "applications": [
+    {
+      "name": "baseline",
+      "exe": "E:\\todoline\\TodoLine-Electron\\.cache\\startup-baseline-0.2.2\\TodoLine Electron.exe"
+    },
+    {
+      "name": "current",
+      "exe": "E:\\todoline\\TodoLine-Electron\\dist\\release-0.2.2\\win-unpacked\\TodoLine Electron.exe",
+      "app": "E:\\todoline\\TodoLine-Electron"
+    }
+  ],
+  "samples": [
+    {
+      "scenario": "empty",
+      "run": 0,
+      "build": "baseline",
+      "connectedMs": 956,
+      "editableMs": 1210,
+      "paintedMs": 1940,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.37890625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 98.25
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 66.3046875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.94921875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 88.3046875
+        }
+      ],
+      "memoryMB": 450
+    },
+    {
+      "scenario": "empty",
+      "run": 0,
+      "build": "current",
+      "connectedMs": 1191,
+      "editableMs": 1427,
+      "paintedMs": 1451,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 148.0390625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 82.7890625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 45.14453125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 88.75390625
+        }
+      ],
+      "memoryMB": 365
+    },
+    {
+      "scenario": "empty",
+      "run": 1,
+      "build": "current",
+      "connectedMs": 1108,
+      "editableMs": 1361,
+      "paintedMs": 2044,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 157.453125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 116.33984375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 62.3984375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 98.29296875
+        }
+      ],
+      "memoryMB": 434
+    },
+    {
+      "scenario": "empty",
+      "run": 1,
+      "build": "baseline",
+      "connectedMs": 1106,
+      "editableMs": 1374,
+      "paintedMs": 1388,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 150.76171875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 72.921875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 63.921875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.5234375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 85.4609375
+        }
+      ],
+      "memoryMB": 421
+    },
+    {
+      "scenario": "empty",
+      "run": 2,
+      "build": "baseline",
+      "connectedMs": 1293,
+      "editableMs": 1544,
+      "paintedMs": 1558,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 171.62890625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 109.01171875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 101.44140625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 78.2734375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 99.59375
+        }
+      ],
+      "memoryMB": 560
+    },
+    {
+      "scenario": "empty",
+      "run": 2,
+      "build": "current",
+      "connectedMs": 1095,
+      "editableMs": 1323,
+      "paintedMs": 2027,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.25
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 98.5546875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 45.34765625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 88.0546875
+        }
+      ],
+      "memoryMB": 381
+    },
+    {
+      "scenario": "empty",
+      "run": 3,
+      "build": "current",
+      "connectedMs": 992,
+      "editableMs": 1207,
+      "paintedMs": 1844,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 160.8671875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 117.71484375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 63.6015625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 99.58203125
+        }
+      ],
+      "memoryMB": 442
+    },
+    {
+      "scenario": "empty",
+      "run": 3,
+      "build": "baseline",
+      "connectedMs": 1000,
+      "editableMs": 1250,
+      "paintedMs": 1869,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 146.23828125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 97.046875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 63.88671875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.83984375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 85.4296875
+        }
+      ],
+      "memoryMB": 440
+    },
+    {
+      "scenario": "empty",
+      "run": 4,
+      "build": "baseline",
+      "connectedMs": 955,
+      "editableMs": 1195,
+      "paintedMs": 1244,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 159.90234375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 93.1171875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 87.515625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 63.87109375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 99.05078125
+        }
+      ],
+      "memoryMB": 503
+    },
+    {
+      "scenario": "empty",
+      "run": 4,
+      "build": "current",
+      "connectedMs": 991,
+      "editableMs": 1222,
+      "paintedMs": 1906,
+      "marks": [],
+      "resources": [],
+      "editors": 0,
+      "domNodes": 205,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 151.8828125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 97.38671875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 45.5546875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 88.93359375
+        }
+      ],
+      "memoryMB": 384
+    },
+    {
+      "scenario": "single-small",
+      "run": 0,
+      "build": "baseline",
+      "connectedMs": 1057,
+      "editableMs": 1451,
+      "paintedMs": 2219,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.7734375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 100.9765625
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 66.125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.94921875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 95.5078125
+        }
+      ],
+      "memoryMB": 460
+    },
+    {
+      "scenario": "single-small",
+      "run": 0,
+      "build": "current",
+      "connectedMs": 1052,
+      "editableMs": 1472,
+      "paintedMs": 1860,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 152.55859375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 93.35546875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 66.171875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.94140625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 95.09375
+        }
+      ],
+      "memoryMB": 455
+    },
+    {
+      "scenario": "single-small",
+      "run": 1,
+      "build": "current",
+      "connectedMs": 1107,
+      "editableMs": 1565,
+      "paintedMs": 2196,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 174.64453125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 135.015625
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 107.19921875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 79.93359375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 105.95703125
+        }
+      ],
+      "memoryMB": 603
+    },
+    {
+      "scenario": "single-small",
+      "run": 1,
+      "build": "baseline",
+      "connectedMs": 1150,
+      "editableMs": 1582,
+      "paintedMs": 2140,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 150.0234375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 99.11328125
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 66.19921875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.87890625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 98.1171875
+        }
+      ],
+      "memoryMB": 461
+    },
+    {
+      "scenario": "single-small",
+      "run": 2,
+      "build": "baseline",
+      "connectedMs": 1101,
+      "editableMs": 1524,
+      "paintedMs": 2333,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 161.296875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 123.3515625
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 89.78125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 63.70703125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 109.3125
+        }
+      ],
+      "memoryMB": 547
+    },
+    {
+      "scenario": "single-small",
+      "run": 2,
+      "build": "current",
+      "connectedMs": 1109,
+      "editableMs": 1490,
+      "paintedMs": 2060,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.68359375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 99.4296875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 68.8359375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.75390625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 97.890625
+        }
+      ],
+      "memoryMB": 464
+    },
+    {
+      "scenario": "single-small",
+      "run": 3,
+      "build": "current",
+      "connectedMs": 1096,
+      "editableMs": 1470,
+      "paintedMs": 2008,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 161.05859375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 118.859375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 92.3515625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 63.8203125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 108.6953125
+        }
+      ],
+      "memoryMB": 545
+    },
+    {
+      "scenario": "single-small",
+      "run": 3,
+      "build": "baseline",
+      "connectedMs": 1239,
+      "editableMs": 1734,
+      "paintedMs": 2610,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.91796875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 101.23046875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 68.91015625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.96875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 98.22265625
+        }
+      ],
+      "memoryMB": 466
+    },
+    {
+      "scenario": "single-small",
+      "run": 4,
+      "build": "baseline",
+      "connectedMs": 997,
+      "editableMs": 1373,
+      "paintedMs": 2066,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 174.66796875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 136.13671875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 104.6171875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 79.9140625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 106.3125
+        }
+      ],
+      "memoryMB": 602
+    },
+    {
+      "scenario": "single-small",
+      "run": 4,
+      "build": "current",
+      "connectedMs": 970,
+      "editableMs": 1329,
+      "paintedMs": 1820,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 660,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 99.125
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 66.3125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.99609375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 94.765625
+        }
+      ],
+      "memoryMB": 458
+    },
+    {
+      "scenario": "single-5000",
+      "run": 0,
+      "build": "baseline",
+      "connectedMs": 1002,
+      "editableMs": 2681,
+      "paintedMs": 2827,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 154.67578125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 104.03125
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 84.58203125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.63671875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 271.80078125
+        }
+      ],
+      "memoryMB": 663
+    },
+    {
+      "scenario": "single-5000",
+      "run": 0,
+      "build": "current",
+      "connectedMs": 977,
+      "editableMs": 2406,
+      "paintedMs": 2555,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 151.0859375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 104.55859375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 82.6796875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 48.01953125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 256.953125
+        }
+      ],
+      "memoryMB": 643
+    },
+    {
+      "scenario": "single-5000",
+      "run": 1,
+      "build": "current",
+      "connectedMs": 903,
+      "editableMs": 2264,
+      "paintedMs": 2414,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 185.0625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 145.37109375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 123.9609375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 85.3828125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 268.60546875
+        }
+      ],
+      "memoryMB": 808
+    },
+    {
+      "scenario": "single-5000",
+      "run": 1,
+      "build": "baseline",
+      "connectedMs": 860,
+      "editableMs": 2445,
+      "paintedMs": 2586,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 153.2734375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 104.17578125
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 82.96484375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 48.1875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 271.88671875
+        }
+      ],
+      "memoryMB": 660
+    },
+    {
+      "scenario": "single-5000",
+      "run": 2,
+      "build": "baseline",
+      "connectedMs": 925,
+      "editableMs": 2503,
+      "paintedMs": 2648,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 182.23046875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 144.4921875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 123.640625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 85.22265625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 281.9609375
+        }
+      ],
+      "memoryMB": 818
+    },
+    {
+      "scenario": "single-5000",
+      "run": 2,
+      "build": "current",
+      "connectedMs": 937,
+      "editableMs": 2308,
+      "paintedMs": 2444,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 152.21484375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 103.7734375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 82.62109375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 48.29296875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 259.70703125
+        }
+      ],
+      "memoryMB": 647
+    },
+    {
+      "scenario": "single-5000",
+      "run": 3,
+      "build": "current",
+      "connectedMs": 906,
+      "editableMs": 2218,
+      "paintedMs": 2359,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 185.3046875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 145.29296875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 121.73828125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 85.5859375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 268.1875
+        }
+      ],
+      "memoryMB": 806
+    },
+    {
+      "scenario": "single-5000",
+      "run": 3,
+      "build": "baseline",
+      "connectedMs": 883,
+      "editableMs": 2348,
+      "paintedMs": 2481,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 151.91015625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 104.125
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 83.015625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 48.80078125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 269.375
+        }
+      ],
+      "memoryMB": 657
+    },
+    {
+      "scenario": "single-5000",
+      "run": 4,
+      "build": "baseline",
+      "connectedMs": 870,
+      "editableMs": 2472,
+      "paintedMs": 2616,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 181.58984375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 144.50390625
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 120.85546875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 84.890625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 281.2890625
+        }
+      ],
+      "memoryMB": 813
+    },
+    {
+      "scenario": "single-5000",
+      "run": 4,
+      "build": "current",
+      "connectedMs": 855,
+      "editableMs": 2143,
+      "paintedMs": 2275,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 15570,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 152.67578125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 104.55859375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 82.07421875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 48.3125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 257.40625
+        }
+      ],
+      "memoryMB": 645
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 0,
+      "build": "baseline",
+      "connectedMs": 824,
+      "editableMs": 1688,
+      "paintedMs": 1839,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 152.94140625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 102.796875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 77
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.7578125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 163.82421875
+        }
+      ],
+      "memoryMB": 544
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 0,
+      "build": "current",
+      "connectedMs": 846,
+      "editableMs": 1632,
+      "paintedMs": 1649,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 155.01953125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 98.42578125
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 79.578125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.94140625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 150.48046875
+        }
+      ],
+      "memoryMB": 531
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 1,
+      "build": "current",
+      "connectedMs": 909,
+      "editableMs": 1713,
+      "paintedMs": 1874,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 179.90625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 142.19921875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 120.95703125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 83.4140625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 164.23046875
+        }
+      ],
+      "memoryMB": 691
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 1,
+      "build": "baseline",
+      "connectedMs": 832,
+      "editableMs": 1628,
+      "paintedMs": 1901,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 152.0625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 101.35546875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 77.1015625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.703125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 168.4609375
+        }
+      ],
+      "memoryMB": 547
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 2,
+      "build": "baseline",
+      "connectedMs": 786,
+      "editableMs": 1602,
+      "paintedMs": 1776,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 177.25
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 140.9140625
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 121.296875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 83.0703125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 176.27734375
+        }
+      ],
+      "memoryMB": 699
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 2,
+      "build": "current",
+      "connectedMs": 802,
+      "editableMs": 1621,
+      "paintedMs": 1776,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 154.33203125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 102.19921875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 76.98046875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 48.10546875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 152.625
+        }
+      ],
+      "memoryMB": 534
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 3,
+      "build": "current",
+      "connectedMs": 888,
+      "editableMs": 1775,
+      "paintedMs": 1963,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 180.578125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 142.74609375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 121.55078125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 83.5859375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 165.91796875
+        }
+      ],
+      "memoryMB": 694
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 3,
+      "build": "baseline",
+      "connectedMs": 875,
+      "editableMs": 1758,
+      "paintedMs": 1963,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 150.78515625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 100.80859375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 77.01953125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.29296875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 163.58984375
+        }
+      ],
+      "memoryMB": 539
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 4,
+      "build": "baseline",
+      "connectedMs": 901,
+      "editableMs": 1901,
+      "paintedMs": 2074,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 178.61328125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 143.5625
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 122.12109375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 83.9375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 176.9765625
+        }
+      ],
+      "memoryMB": 705
+    },
+    {
+      "scenario": "restore-4x1500",
+      "run": 4,
+      "build": "current",
+      "connectedMs": 883,
+      "editableMs": 1668,
+      "paintedMs": 1693,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 5118,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 154.39453125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 99.37109375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 77.1171875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 48.234375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 153.79296875
+        }
+      ],
+      "memoryMB": 533
+    },
+    {
+      "scenario": "markdown",
+      "run": 0,
+      "build": "baseline",
+      "connectedMs": 819,
+      "editableMs": 1174,
+      "paintedMs": 1186,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 148.09375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 81.82421875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 63.8125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.2578125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 109.72265625
+        }
+      ],
+      "memoryMB": 451
+    },
+    {
+      "scenario": "markdown",
+      "run": 0,
+      "build": "current",
+      "connectedMs": 822,
+      "editableMs": 1150,
+      "paintedMs": 1535,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.6953125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 98.44140625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 45.08984375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 107.671875
+        }
+      ],
+      "memoryMB": 401
+    },
+    {
+      "scenario": "markdown",
+      "run": 1,
+      "build": "current",
+      "connectedMs": 780,
+      "editableMs": 1117,
+      "paintedMs": 1228,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 176.93359375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 129.0078125
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 82.84375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 119.06640625
+        }
+      ],
+      "memoryMB": 508
+    },
+    {
+      "scenario": "markdown",
+      "run": 1,
+      "build": "baseline",
+      "connectedMs": 797,
+      "editableMs": 1146,
+      "paintedMs": 1552,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 152.18359375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 99.265625
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 63.84375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.95703125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 110.6015625
+        }
+      ],
+      "memoryMB": 474
+    },
+    {
+      "scenario": "markdown",
+      "run": 2,
+      "build": "baseline",
+      "connectedMs": 775,
+      "editableMs": 1121,
+      "paintedMs": 1136,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 158.296875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 101.98046875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 90.34375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 64.58984375
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 119.1484375
+        }
+      ],
+      "memoryMB": 534
+    },
+    {
+      "scenario": "markdown",
+      "run": 2,
+      "build": "current",
+      "connectedMs": 766,
+      "editableMs": 1120,
+      "paintedMs": 1486,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.33984375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 99.296875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 45.30078125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 112.27734375
+        }
+      ],
+      "memoryMB": 406
+    },
+    {
+      "scenario": "markdown",
+      "run": 3,
+      "build": "current",
+      "connectedMs": 767,
+      "editableMs": 1104,
+      "paintedMs": 1475,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 177.57421875
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 136.88671875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 82.71875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 119.4296875
+        }
+      ],
+      "memoryMB": 517
+    },
+    {
+      "scenario": "markdown",
+      "run": 3,
+      "build": "baseline",
+      "connectedMs": 782,
+      "editableMs": 1156,
+      "paintedMs": 1532,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.65234375
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 98.6796875
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 63.93359375
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 47.6796875
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 110.80078125
+        }
+      ],
+      "memoryMB": 471
+    },
+    {
+      "scenario": "markdown",
+      "run": 4,
+      "build": "baseline",
+      "connectedMs": 821,
+      "editableMs": 1179,
+      "paintedMs": 1277,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 160.69140625
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 112.3984375
+        },
+        {
+          "type": "Utility",
+          "name": "TodoLine 数据库",
+          "memoryMB": 90.01171875
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 64.31640625
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 121.61328125
+        }
+      ],
+      "memoryMB": 549
+    },
+    {
+      "scenario": "markdown",
+      "run": 4,
+      "build": "current",
+      "connectedMs": 769,
+      "editableMs": 1095,
+      "paintedMs": 1464,
+      "marks": [],
+      "resources": [],
+      "editors": 1,
+      "domNodes": 762,
+      "processes": [
+        {
+          "type": "Browser",
+          "memoryMB": 149.5078125
+        },
+        {
+          "type": "GPU",
+          "memoryMB": 98.4765625
+        },
+        {
+          "type": "Utility",
+          "name": "Network Service",
+          "memoryMB": 45.42578125
+        },
+        {
+          "type": "Tab",
+          "memoryMB": 107.890625
+        }
+      ],
+      "memoryMB": 401
+    }
+  ],
+  "note": "Visible isolated windows; repeated launches with OS cache retained; includes Playwright connection overhead, not strict cold start.",
+  "summary": [
+    {
+      "scenario": "empty",
+      "beforeMs": 1250,
+      "afterMs": 1323,
+      "reductionPercent": -5.8,
+      "beforeWorkingSetMB": 450,
+      "afterWorkingSetMB": 384,
+      "databaseProcesses": {
+        "baseline": [
+          1
+        ],
+        "current": [
+          0
+        ]
+      }
+    },
+    {
+      "scenario": "single-small",
+      "beforeMs": 1524,
+      "afterMs": 1472,
+      "reductionPercent": 3.4,
+      "beforeWorkingSetMB": 466,
+      "afterWorkingSetMB": 464,
+      "databaseProcesses": {
+        "baseline": [
+          1
+        ],
+        "current": [
+          1
+        ]
+      }
+    },
+    {
+      "scenario": "single-5000",
+      "beforeMs": 2472,
+      "afterMs": 2264,
+      "reductionPercent": 8.4,
+      "beforeWorkingSetMB": 663,
+      "afterWorkingSetMB": 647,
+      "databaseProcesses": {
+        "baseline": [
+          1
+        ],
+        "current": [
+          1
+        ]
+      }
+    },
+    {
+      "scenario": "restore-4x1500",
+      "beforeMs": 1688,
+      "afterMs": 1668,
+      "reductionPercent": 1.2,
+      "beforeWorkingSetMB": 547,
+      "afterWorkingSetMB": 534,
+      "databaseProcesses": {
+        "baseline": [
+          1
+        ],
+        "current": [
+          1
+        ]
+      }
+    },
+    {
+      "scenario": "markdown",
+      "beforeMs": 1156,
+      "afterMs": 1117,
+      "reductionPercent": 3.4,
+      "beforeWorkingSetMB": 474,
+      "afterWorkingSetMB": 406,
+      "databaseProcesses": {
+        "baseline": [
+          1
+        ],
+        "current": [
+          0
+        ]
+      }
+    }
+  ],
+  "baselineDescription": "Frozen navigation-only 0.2.2 package before the startup optimizations; not the published 0.2.1 release.",
+  "baselineAsarSHA256": "69aa0fbc72e2dcc74c7ec7e60aaf460498872f6536dfb1b76d59ace8c2c62a25",
+  "currentAsarSHA256": "2d399285b15cf80e013e1fa0638a7a213fe9950cfdb00d63e8f115fb5d7341a4"
+}

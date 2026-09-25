@@ -1,0 +1,45 @@
+.event-panel{right:18px;bottom:38px;width:min(420px,calc(100vw - 32px));height:min(520px,76vh);max-height:76vh;display:flex;flex-direction:column;padding:12px;gap:10px}
+.event-panel>header,.event-panel>header>div{display:flex;align-items:center;gap:8px}
+.event-panel>header{justify-content:space-between}
+.event-panel>header h3{margin:0;font-size:13px}
+.event-panel>header span{font-size:12px;color:var(--muted)}
+.event-panel>header svg{color:var(--blue)}
+.event-filter{display:flex;gap:8px;align-items:center;background:var(--canvas);padding:6px 10px;border:1px solid var(--border);border-radius:5px;color:var(--muted);flex-shrink:0}
+.event-filter input{flex:1;width:0;font-size:12px;background:transparent;border:0}.event-filter input:focus,.event-filter input:focus-visible{outline:none}.event-filter input:focus::placeholder{color:transparent}.search-bar input:focus,.search-bar input:focus-visible{outline:none}.search-bar input:focus::placeholder{color:transparent}
+.event-panel-rows{flex:1;min-height:50px;overflow:auto;}
+.event-panel-row{display:flex;gap:9px;align-items:center;padding:3px 7px;border-radius:5px}
+.event-panel-row:hover,.event-panel-row:focus-within{background:var(--hover)}
+.event-panel-row>input{margin:0;flex-shrink:0;accent-color:var(--blue)}
+.event-panel-row>button{display:flex;align-items:baseline;gap:10px;min-width:0;flex:1;text-align:left;padding:2px 0}
+.event-panel-row>button>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0;font-size:12px}
+.event-panel-row>button>small{font-size:12px;color:var(--soft);margin:0;flex-shrink:0;font-variant-numeric:tabular-nums}
+.event-panel-row.completed>button>span{text-decoration:line-through;color:var(--muted)}
+.event-panel-empty{font-size:12px;color:var(--soft);text-align:center;padding:18px}
+.event-preview{position:absolute;right:100%;margin-right:10px;width:min(300px,42vw);max-height:220px;overflow:auto;background:var(--surface);border:1px solid var(--border);border-radius:7px;box-shadow:var(--shadow);padding:10px 12px;user-select:text;z-index:1}
+.event-preview>p{white-space:pre-wrap;font-size:12px;line-height:1.6;margin:0;user-select:text}
+.event-preview>small{display:block;margin-top:7px;font-size:12px;color:var(--muted)}
+.menu-rule{height:1px;background:var(--border);margin:4px 6px}
+.event-context-menu{width:242px;max-height:calc(100vh - 16px);overflow:auto}
+.text-context-menu,.file-menu{width:220px}.menu.file-menu>button,.menu.text-context-menu>button,.menu.text-context-menu .numbering-actions>button{padding:5px 10px;line-height:1.5}
+.danger,.overdue-status{color:#e39b87!important}
+.search-bar{flex-wrap:wrap}
+.search-bar>input{min-width:110px}
+.search-bar>button{font-size:12px;border-radius:4px;white-space:nowrap}
+.search-select{color:var(--blue)}
+.statusbar b{font-weight:500;font-variant-numeric:tabular-nums}
+.selection-count{white-space:nowrap;color:var(--blue)}
+@media(max-width:1100px){.statusbar{gap:4px;padding:0 6px}.statusbar .reminder-status{display:none}.statusbar .progress-track{display:none}}
+@media(max-height:650px){.event-panel{max-height:80vh}}
+@media(max-width:820px){.event-preview{display:none}}
+.list-style-menu{width:236px}
+.list-style-options{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:0 6px 6px}
+.list-style-options button{padding:4px 8px;line-height:1.5;border:1px solid var(--border);border-radius:4px;font-size:12px;text-align:left;white-space:nowrap;color:var(--text)}
+.list-style-options button.active{background:var(--blue-dim);border-color:color-mix(in srgb,var(--blue) 40%,transparent);color:var(--blue)}
+.list-style-options.bullets{grid-template-columns:repeat(3,1fr)}
+.list-style-options.bullets button{text-align:center;font-size:15px;line-height:18px}
+.list-bullet-circle{display:inline-block;width:10px;height:10px;border:1.5px solid currentColor;border-radius:50%;vertical-align:middle}
+.list-bullet-circle.filled{background:currentColor}
+
+.numbering-actions{display:flex;gap:4px}.numbering-actions>button{flex:1;min-width:0;justify-content:center}
+.menu-icon{display:flex;align-items:center}
+.ctrl-link-mode .todo-document a[href]{cursor:pointer}

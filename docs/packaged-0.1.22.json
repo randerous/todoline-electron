@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "packaged",
+    "requestedScale": 2,
+    "scale": 2,
+    "viewport": 1240,
+    "toolbar": 1240,
+    "editor": 889,
+    "saved": true,
+    "databaseVerified": true,
+    "clipboardVerified": true,
+    "reminderVerified": true,
+    "renameVerified": true,
+    "tabReorderVerified": true,
+    "linksVerified": true,
+    "formattingVerified": true,
+    "gutterVerified": true,
+    "codeBlockVerified": true,
+    "nestedBoundaryVerified": true,
+    "clipboardReadOrderVerified": true,
+    "plainPasteVerified": true,
+    "tableVerified": true,
+    "imageBatchVerified": true,
+    "tiffOriginalPreviewClipboardVerified": true,
+    "gifWebpOriginalAnimationClipboardVerified": true,
+    "asyncImagePasteOrderVerified": true,
+    "eventSelectionPasteVerified": true,
+    "columnCaretsAndImagePasteVerified": true,
+    "qtRichClipboardAndEmbeddedHtmlImageVerified": true,
+    "standaloneRichListVerified": true
+  }
+]

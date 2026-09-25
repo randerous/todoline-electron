@@ -1,0 +1,26 @@
+{
+  "version": "0.1.49",
+  "executable": "dist/release-0.1.49/win-unpacked/TodoLine Electron.exe",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "relatedUnitTests": { "passed": 49, "failed": 0, "files": 2 },
+  "targetedSourceE2E": { "passed": 10, "failed": 0 },
+  "finalExecutableE2E": {
+    "passed": 9,
+    "failed": 0,
+    "checks": [
+      "Ordered and nested bullet lists retain paragraph positions after marker removal",
+      "Mouse drag to first and interior dividers selects, deletes and undoes the range",
+      "Default and custom postponed reminder times persist, including failure recovery",
+      "One-day postponement synchronizes divider text, saved deadline and event lists",
+      "Unsaved body edits survive reminder deadline changes and reopening",
+      "Failed event saves preserve a retryable reminder and restore the original deadline",
+      "Mark-complete reminders retain their save confirmation and undo behavior"
+    ]
+  },
+  "dividerSelectionVisualCheck": "passed",
+  "compiledFilesChecked": 18,
+  "asarMatchesBuild": true,
+  "zipCRC": "passed",
+  "verificationScope": "Related functionality only; no full test suite"
+}

@@ -1,0 +1,48 @@
+name: E2E (self-hosted, Qt harness required)
+
+# The 42 Playwright specs drive the packaged app through the Qt compatibility
+# harness (.cache/qt-compat/qt-compat.exe). That binary links the sibling Qt
+# project's libtlcore.a plus Qt 6.8.3 and MinGW, so it cannot be built on a
+# GitHub-hosted runner. Run this workflow on a Windows machine that has:
+#   * the repository checked out next to the Qt project `Todoline`
+#   * Qt 6.8.3 + MinGW at the paths used by scripts/build-qt-compat.ps1
+#   * `powershell -File scripts/build-qt-compat.ps1` runnable
+# Register it as a self-hosted runner with the labels below.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  e2e:
+    name: Playwright Electron specs
+    runs-on: [self-hosted, windows, qt]
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Qt compatibility harness
+        shell: powershell
+        run: powershell -ExecutionPolicy Bypass -File scripts/build-qt-compat.ps1
+
+      - name: Build application
+        run: pnpm build
+
+      - name: Run Playwright suite
+        run: pnpm test:e2e
+
+      - name: Upload traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-results
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore

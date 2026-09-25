@@ -1,0 +1,23 @@
+{
+  "version": "0.2.7",
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "packagedE2E": {
+    "passed": 5,
+    "failed": 0,
+    "file": "diff.spec.ts",
+    "executable": "dist/release-0.2.7/win-unpacked/TodoLine Electron.exe"
+  },
+  "packagedHeaderCheck": {
+    "passed": true,
+    "title": "Compare",
+    "direction": "从左侧修改到右侧，需：",
+    "toolbarTooltip": "与前一个标签比较",
+    "allHeaderTextSize": "13px",
+    "titleFontWeight": "700",
+    "otherTextFontWeight": "400",
+    "coarseNoticeAbsentFor1500ChangedLines": true
+  },
+  "visualReview": ["dark", "light", "large-difference header"],
+  "scope": "Compare interface changes and direct regressions only; no full-suite rerun"
+}

@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Typecheck · unit tests · build (Windows x64)
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        # Version comes from package.json "packageManager".
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      # build-clipboard.mjs (C) and build-image-codec.mjs (C++, windowscodecs)
+      # compile the Windows helpers with gcc/g++.
+      - uses: egor-tensin/setup-mingw@v2
+        with:
+          platform: x64
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      # Tests that need a local-only artifact (the Qt round-trip harness, the
+      # Windows WIC image helper) skip themselves with an explicit guard; the
+      # rest of the suite, including concurrency/conflict coverage, must pass.
+      - name: Unit tests
+        run: pnpm test
+
+      - name: Build (main, workers, preloads, renderer, native helpers)
+        run: pnpm build
+
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: out-win-x64
+          path: out/
+          retention-days: 7
+          if-no-files-found: error
+
+  unit-tests-macos:
+    name: Portability · unit tests (macOS)
+    runs-on: macos-14
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm test

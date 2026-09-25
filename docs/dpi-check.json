@@ -1,0 +1,29 @@
+[
+  {
+    "mode": "source",
+    "requestedScale": 1,
+    "scale": 1,
+    "viewport": 1240,
+    "toolbar": 1240,
+    "editor": 889,
+    "saved": true
+  },
+  {
+    "mode": "source",
+    "requestedScale": 1.5,
+    "scale": 1.5,
+    "viewport": 1240,
+    "toolbar": 1240,
+    "editor": 889,
+    "saved": true
+  },
+  {
+    "mode": "source",
+    "requestedScale": 2,
+    "scale": 2,
+    "viewport": 1240,
+    "toolbar": 1240,
+    "editor": 889,
+    "saved": true
+  }
+]
