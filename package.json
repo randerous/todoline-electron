@@ -15,6 +15,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
+    "test:e2e:ci": "node scripts/e2e-ci.mjs",
     "start": "electron .",
     "package": "node scripts/package.mjs",
     "prepare": "node scripts/prepare-native.mjs"

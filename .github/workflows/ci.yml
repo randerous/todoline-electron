@@ -69,6 +69,54 @@ jobs:
           retention-days: 7
           if-no-files-found: error
 
+  e2e:
+    name: Playwright Electron specs (Windows x64)
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - uses: actions/cache@v4
+        with:
+          path: .cache/pnpm-store
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: pnpm-store-${{ runner.os }}-
+
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: false
+          install: mingw-w64-x86_64-gcc
+          path-type: inherit
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build application
+        run: pnpm build
+
+      # 26 of the 42 specs; scripts/e2e-ci.mjs lists the 16 that need the local
+      # Qt harness and prints them, so nothing is dropped silently.
+      - name: Run interface regression suite
+        run: pnpm test:e2e:ci
+
+      - name: Upload Playwright traces and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-windows
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore
+
   unit-tests-macos:
     name: Portability · unit tests (macOS)
     runs-on: macos-14
