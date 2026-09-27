@@ -9,7 +9,10 @@ import { createRequire } from 'node:module';
 import path from 'node:path';
 
 const require = createRequire(import.meta.url);
-const dir = path.join('tests', 'e2e');
+// Forward slashes on every platform: these strings are CLI regex filters, and a
+// Windows path.join prefix (tests\e2e) becomes "\e" in the regex and matches
+// nothing. Node accepts forward slashes for the fs calls below on Windows too.
+const dir = 'tests/e2e';
 const specs = readdirSync(dir).filter(file => file.endsWith('.spec.ts')).sort();
 const needsQt = file => readFileSync(path.join(dir, file), 'utf8').includes('qt-compat');
 const runnable = specs.filter(file => !needsQt(file));
