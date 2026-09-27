@@ -18,14 +18,14 @@ const needsQt = file => readFileSync(path.join(dir, file), 'utf8').includes('qt-
 const runnable = specs.filter(file => !needsQt(file));
 const skipped = specs.filter(needsQt);
 
+// Tests that need software the runner does not have. Kept as an explicit list so
+// the skip is visible in the log instead of silently dropping coverage.
+const requiresUnavailableSoftware = 'PowerPoint';
+
 console.log(`e2e-ci: ${runnable.length} specs run, ${skipped.length} skipped (need .cache/qt-compat/qt-compat.exe)`);
 console.log(`e2e-ci: excluding tests matching ${JSON.stringify(requiresUnavailableSoftware)} (needs Microsoft PowerPoint COM)`);
 if (skipped.length) console.log(`e2e-ci: skipped -> ${skipped.join(', ')}`);
 if (!runnable.length) throw new Error('No runnable Playwright specs found.');
-
-// Tests that need software the runner does not have. Kept as an explicit list so
-// the skip is visible in the log instead of silently dropping coverage.
-const requiresUnavailableSoftware = 'PowerPoint';
 
 // The CLI treats each argument as a regex matched against the test file path and
 // normalizes separators to "/", so pass forward-slash relative paths: a Windows
