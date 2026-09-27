@@ -19,10 +19,13 @@ console.log(`e2e-ci: ${runnable.length} specs run, ${skipped.length} skipped (ne
 if (skipped.length) console.log(`e2e-ci: skipped -> ${skipped.join(', ')}`);
 if (!runnable.length) throw new Error('No runnable Playwright specs found.');
 
-// Absolute paths: the Playwright CLI resolves filters from the config testDir.
+// The CLI treats each argument as a regex matched against the test file path and
+// normalizes separators to "/", so pass forward-slash relative paths: a Windows
+// absolute path (D:\a\...) matches nothing and aborts with "No tests found.".
+const filter = file => `${dir}/${file}`;
 const result = spawnSync(
   process.execPath,
-  [require.resolve('@playwright/test/cli'), 'test', ...runnable.map(file => path.resolve(dir, file))],
+  [require.resolve('@playwright/test/cli'), 'test', ...runnable.map(filter)],
   { stdio: 'inherit' },
 );
 process.exit(result.status ?? 1);
