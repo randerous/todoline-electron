@@ -6,7 +6,7 @@ import {execFileSync} from 'node:child_process';
 import {DocumentStore} from '../../src/main/storage';
 test('Windows native menu accelerators create, save, search, close and open documents',async({},info)=>{
   const root=info.outputPath('workspace');await fs.mkdir(root,{recursive:true});const file=path.join(root,'原生快捷键.tde'),store=new DocumentStore(),doc=store.open(file,true);store.close(doc.handle);
-  const helper=path.join(root,'native-keys.exe'),compiler='E:/Qt/Tools/mingw1310_64/bin/gcc.exe';execFileSync(compiler,['-std=c11','-O2','-s','-static','tests/fixtures/native-keys.c','-luser32','-o',helper],{windowsHide:true,env:{...process.env,PATH:path.dirname(compiler)+';'+process.env.PATH}});
+  const helper=path.join(root,'native-keys.exe'),compiler=process.env.CC||'E:/Qt/Tools/mingw1310_64/bin/gcc.exe';execFileSync(compiler,['-std=c11','-O2','-s','-static','tests/fixtures/native-keys.c','-luser32','-o',helper],{windowsHide:true,env:{...process.env,PATH:path.dirname(compiler)+';'+process.env.PATH}});
   const env:NodeJS.ProcessEnv={...process.env,TODOLINE_TEST:'1',TODOLINE_DATA_DIR:path.join(root,'profile')};delete env.ELECTRON_RUN_AS_NODE;const app=await _electron.launch({args:[path.resolve('.')],env:env as Record<string,string>});
   try{const page=await app.firstWindow();await page.getByRole('button',{name:'新建文档 · Ctrl+N',exact:true}).waitFor();await page.evaluate(()=>{(window as any).nativeCommands=[];window.desktop.onCommand(command=>(window as any).nativeCommands.push(command));});
     const ownerId=await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows().find(w=>w.webContents.getURL().endsWith('index.html'))!.id);

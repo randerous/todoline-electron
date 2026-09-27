@@ -103,8 +103,14 @@ jobs:
 
       # 26 of the 42 specs; scripts/e2e-ci.mjs lists the 16 that need the local
       # Qt harness and prints them, so nothing is dropped silently.
+      # PLAYWRIGHT_OUTPUT_DIR keeps test paths short: Windows MAX_PATH is 260 and
+      # the app's recovery backup nests workspace/profile/recovery/<uuid>/<file>.
+      # CC lets the fixture-compiling specs use the MSYS2 gcc on PATH.
       - name: Run interface regression suite
         run: pnpm test:e2e:ci
+        env:
+          PLAYWRIGHT_OUTPUT_DIR: ${{ runner.temp }}/pw
+          CC: gcc
 
       - name: Upload Playwright traces and report
         if: always()
@@ -112,7 +118,7 @@ jobs:
         with:
           name: playwright-windows
           path: |
-            test-results/
+            ${{ runner.temp }}/pw
             playwright-report/
           retention-days: 7
           if-no-files-found: ignore
